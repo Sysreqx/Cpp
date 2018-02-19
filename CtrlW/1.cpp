@@ -1,26 +1,41 @@
 #include <iostream>
 using namespace std;
-bool a[10000]; int n, i, p = 2, r;
+
 int main() {
-	cin >> n;
-
-	do {
-		i = 2;
-		do {
-			a[p*i] = 1; i++;
-		} while (p*i <= n);
-
-		r = p; i = 2; do {
-			if (!a[i])if (i>p)p = i; i++;
-		} while (r == p);
-
+int n, m;
+cin >> n >> m;
+bool a[n];
+int a1[m];
+for (int i = 2; i <= n; ++i)
+{
+	a[i] = true;
+}
+for (int i = 2; i * i <= n; ++i)
+{
+	if (a[i] == true)
+	{
+		for (int j = i * i; j <= n; j += i)
+		{
+			a[j] = false;
+		}
 	}
-	while (p <= n / 2 + 1);
+}
 
-	i = 2;
-	do {
-		if (!a[i])cout << i << "\n"; i++;
+int j = 0;
+for (int i = 2; i <= n; ++i)
+{
+	if (a[i] == true)
+	{
+		cout << i << ' ';
+		a1[j] = i;
+		++j;
+		// cout << "j" << i << endl;
 	}
-	while (i <= n);
-	return 1;
+}
+cout << endl;
+cout << a1[m - 1];
+
+
+system("pause");
+return 0;
 }
