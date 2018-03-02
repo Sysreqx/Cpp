@@ -1,4 +1,4 @@
-﻿// Достает уникальные слова с файла
+﻿/*// Достает уникальные слова с файла
 
 #include <iostream>
 #include <fstream> //ifstream ofstream
@@ -8,58 +8,57 @@
 #include <vector>
 // #include <iomanip> // hz why
 using namespace std;
+#include "path.cpp" // подтянуть переменные
 
 int main()
 {
 	ifstream f1;
 	ofstream fout;
-	//Путь к файлу
-	string f1_path_in = "Subtitles\\misfits3s2e.srt";
-	string f1_path_out = "TempFiles\\misfits3s2e.srt";
+*/
 
 	//Открыть файл который нужно отредактировать
-	f1.open(f1_path_in);
+	f1.open(f1_path1);
 	//Создать выходной файл
-	fout.open(f1_path_out.substr(0, f1_path_out.size() - 4) + "OUT.txt");
+	fout.open(f1_path2.substr(0, f1_path2.size() - 4) + "OUT.txt");
 
-	string str;
-	vector<string> vec_str;
+	string str_unic_words1;
+	vector<string> vec_str_unic_words1;
 
 	//Закинуть слово в вектор
-	while(f1 >> str)
+	while(f1 >> str_unic_words1)
 	{
 		// Привести все к нижнему регистру
-		for (int k = 0; k < str.size(); ++k)
+		for (int k = 0; k < str_unic_words1.size(); ++k)
 		{
-			str[k] = tolower(str[k]);
+			str_unic_words1[k] = tolower(str_unic_words1[k]);
 		}
-		vec_str.push_back(str);
-		vec_str.push_back("\n");
+		vec_str_unic_words1.push_back(str_unic_words1);
+		vec_str_unic_words1.push_back("\n");
 	}
 
 	//Сортировать массив
-	sort (vec_str.begin(), vec_str.end());
+	sort (vec_str_unic_words1.begin(), vec_str_unic_words1.end());
 
 	  //Удалить одинаковые слова
-	for (int i = 0; i < vec_str.size(); ++i)
+	for (int i = 0; i < vec_str_unic_words1.size(); ++i)
 	{
-		for (int j = i + 1; j < vec_str.size(); ++j)
+		for (int j = i + 1; j < vec_str_unic_words1.size(); ++j)
 		{
-			if (vec_str[i] == vec_str[j])
+			if (vec_str_unic_words1[i] == vec_str_unic_words1[j])
 			{
-				vec_str.erase(vec_str.begin() + j);
+				vec_str_unic_words1.erase(vec_str_unic_words1.begin() + j);
 				--j;
 			}
 		}
 	}
 
 	//Вывести в файл
-	for (int i = 0; i < vec_str.size(); ++i)
+	for (int i = 0; i < vec_str_unic_words1.size(); ++i)
 	{
 		//не выводить пустые строки
-		if (vec_str[i].size() > 1)
+		if (vec_str_unic_words1[i].size() > 1)
 		{
-			fout << vec_str[i] << endl;
+			fout << vec_str_unic_words1[i] << endl;
 		}
 	}
 
@@ -67,4 +66,4 @@ int main()
 	fout.close();
 
 	// system("pause");
-}
+/*}*/

@@ -1,0 +1,1370 @@
+'cause - потому что
+ - 
+'round - 'круглый
+ - 
+aah - ааа
+ - 
+actual - фактический
+ - 
+adi - ади
+ - 
+adiyodi - adiyodi
+ - 
+alice - Алиса
+ - 
+alley - аллея
+ - 
+america - Америка
+ - 
+an - an
+ - 
+announcement - объявление
+ - 
+anyways - в любом случае
+ - 
+anywhere - в любом месте
+ - 
+apologies - извинения
+ - 
+appreciate - ценить
+ - 
+are - находятся
+ - 
+aren't - не
+ - 
+asking - просить
+ - 
+ass - жопа
+ - 
+asses - ослы
+ - 
+asshole - Мудак
+ - 
+assistant's - ассистента
+ - 
+astral - астральный
+ - 
+ate - ел
+ - 
+backhoe - экскаватор
+ - 
+bang - бах
+ - 
+barely - едва
+ - 
+bat - летучая мышь
+ - 
+bath - ванна
+ - 
+bay - залив
+ - 
+beans - фасоль
+ - 
+beast - зверь
+ - 
+beauty - красота
+ - 
+becoming - становление
+ - 
+been - было
+ - 
+behalf - от имени
+ - 
+belligerent - воинственный
+ - 
+benedict - Бенедикт
+ - 
+bigger - больше
+ - 
+bitch - сука
+ - 
+blackout - затемнение
+ - 
+blame - вина
+ - 
+blocked - блокированный
+ - 
+blowing - дующий
+ - 
+blows - ударов
+ - 
+blunt - тупой
+ - 
+bodi - Води
+ - 
+books - книги
+ - 
+bowling - боулинг
+ - 
+brains - мозги
+ - 
+brakebills - brakebills
+ - 
+branch - филиал
+ - 
+breakbill - breakbill
+ - 
+breakbills - breakbills
+ - 
+bricks - кирпич
+ - 
+bringing - приведение
+ - 
+brochure - брошюра
+ - 
+broken - сломанный
+ - 
+bros - братья
+ - 
+brought - привел
+ - 
+bud - бутон
+ - 
+built - построен
+ - 
+bummer - лентяй
+ - 
+bunny - кролик
+ - 
+burial - захоронение
+ - 
+buried - похороненный
+ - 
+bury - закапывать
+ - 
+buzzes - жужжит
+ - 
+buzzing - жужжание
+ - 
+cabinet - кабинет
+ - 
+called - называется
+ - 
+calling - призвание
+ - 
+campus - кампус
+ - 
+can't - не может
+ - 
+candle - свеча
+ - 
+cannibal's - каннибал-х
+ - 
+cannibals - людоеды
+ - 
+cannot - не могу
+ - 
+cards - карты
+ - 
+careful - осторожный
+ - 
+cares - заботы
+ - 
+cassowary - казуар
+ - 
+cast - бросать
+ - 
+cathartic - слабительное
+ - 
+caught - пойманный
+ - 
+cave - пещера
+ - 
+chalky - меловой
+ - 
+chapter - глава
+ - 
+chased - преследовали
+ - 
+chatwin - Чатвин
+ - 
+cheating - мошенничество
+ - 
+checked - проверено
+ - 
+children - дети
+ - 
+chirping - стрекотание
+ - 
+choking - задыхаясь
+ - 
+christ - Христос
+ - 
+chuckles - посмеивается
+ - 
+chute - скат
+ - 
+clay - глина
+ - 
+clears - рассеется
+ - 
+clock - Часы
+ - 
+closed - закрыто
+ - 
+cock - петух
+ - 
+collecting - сбор
+ - 
+coming - приход
+ - 
+commission - комиссия
+ - 
+communicated - сообщаться
+ - 
+compared - в сравнении
+ - 
+complicated - сложно
+ - 
+confused - смущенный
+ - 
+considered - считается
+ - 
+controlling - управление
+ - 
+convince - убеждать
+ - 
+cooper - бондарь
+ - 
+corpse - труп
+ - 
+corrected - исправленный
+ - 
+couldn't - не может
+ - 
+crazy - псих
+ - 
+creaking - скрипучий
+ - 
+creaks - скрипит
+ - 
+created - созданный
+ - 
+creates - создает
+ - 
+creature - существо
+ - 
+crickets - сверчки
+ - 
+crying - плач
+ - 
+curiously - странно
+ - 
+dad - папа
+ - 
+dad's - папа
+ - 
+daddy - папа
+ - 
+dammit - черт побери
+ - 
+damn - черт
+ - 
+days - дней
+ - 
+days' - дней
+ - 
+dean - декан
+ - 
+decades - десятилетия
+ - 
+deck - колода
+ - 
+deemed - считается
+ - 
+dick - Дик
+ - 
+did - сделал
+ - 
+didn't - не
+ - 
+died - умер
+ - 
+directors - директора
+ - 
+does - делает
+ - 
+doesn't - не
+ - 
+doing - дела
+ - 
+don't - не
+ - 
+done - сделанный
+ - 
+doors - двери
+ - 
+doppelganger - двойник
+ - 
+dorm - общая спальня
+ - 
+dormitories - общежития
+ - 
+downstairs - вниз по лестнице
+ - 
+drawer - выдвижной ящик
+ - 
+dressed - заправленный
+ - 
+duck's - утиный
+ - 
+dude - чувак
+ - 
+dudes - чуваки
+ - 
+dullard - тупица
+ - 
+dumb - тупой
+ - 
+dunce - раздолбай
+ - 
+dust - пыли
+ - 
+earth - Земля
+ - 
+eaten - съеденный
+ - 
+eater - едок
+ - 
+eater'll - eater'll
+ - 
+eaters - едоки
+ - 
+eating - принимать пищу
+ - 
+egress - выход
+ - 
+elected - избран
+ - 
+electricity - электричество
+ - 
+eliot - Элиот
+ - 
+eliot's - Элиота
+ - 
+enchantments - чары
+ - 
+entrances - входы
+ - 
+entry - запись
+ - 
+eternity - вечность
+ - 
+everyone's - все это
+ - 
+evicted - выселены
+ - 
+eww - EWW
+ - 
+excellent - отлично
+ - 
+except - Кроме
+ - 
+excuse - оправдание
+ - 
+explains - объясняет
+ - 
+exploded - взорванный
+ - 
+failed - не смогли
+ - 
+fairy - фея
+ - 
+fairyrepelling - fairyrepelling
+ - 
+falling - падение
+ - 
+families - семьи
+ - 
+fascinating - очаровательный
+ - 
+fatherson - fatherson
+ - 
+fed - кормили
+ - 
+feels - чувствует
+ - 
+feet - ноги
+ - 
+file - файл
+ - 
+fillary - fillary
+ - 
+fillory - fillory
+ - 
+finds - находки
+ - 
+fingers - пальцы
+ - 
+fix - фиксировать
+ - 
+fixed - исправлено
+ - 
+flaring - развальцовка
+ - 
+fogg - Фогг
+ - 
+forever - навсегда
+ - 
+formerly - раньше
+ - 
+found - найденный
+ - 
+fountains - фонтаны
+ - 
+fray - изнашиваться
+ - 
+friends - друзья
+ - 
+frozen - замороженный
+ - 
+gagging - рвотные движения
+ - 
+gags - приколы
+ - 
+gasping - затрудненное дыхание
+ - 
+gasps - вздохи
+ - 
+gave - дал
+ - 
+gayer - Гайер
+ - 
+gets - получает
+ - 
+getting - получение
+ - 
+ghost - призрак
+ - 
+ghosts - призраки
+ - 
+girls - девочки
+ - 
+given - данный
+ - 
+god - Бог
+ - 
+goddamn - проклятие
+ - 
+goes - идет
+ - 
+going - собирается
+ - 
+golden - золотой
+ - 
+gone - прошло
+ - 
+gonna - собирается
+ - 
+goodbye - Прощай
+ - 
+got - получил
+ - 
+grandpa - дедушка
+ - 
+grind - растереть
+ - 
+gristle - хрящ
+ - 
+groans - стоны
+ - 
+gross - валовой
+ - 
+grounded - заземленный
+ - 
+grundy - большое жюри
+ - 
+grunting - хрюканье
+ - 
+grunts - хрюкает
+ - 
+guaranteeing - гарантирующий
+ - 
+guards - гвардия
+ - 
+guys - парни
+ - 
+ha - ха
+ - 
+had - имел
+ - 
+hadi - Хади
+ - 
+hallway - прихожая
+ - 
+happened - получилось
+ - 
+happening - происходит
+ - 
+happens - происходит
+ - 
+harbor - гавань
+ - 
+harder - Сильнее
+ - 
+has - имеет
+ - 
+hated - ненавистный
+ - 
+haunting - преследующий
+ - 
+haven't - не
+ - 
+he'll - ад
+ - 
+he's - он
+ - 
+headquartered - со штаб-квартирой
+ - 
+heard - услышанным
+ - 
+heaven - небо
+ - 
+held - Ручной
+ - 
+hello - Здравствуйте
+ - 
+hence - следовательно
+ - 
+henry - Генри
+ - 
+hero - герой
+ - 
+heterosexual - гетеросексуальный
+ - 
+hi - Здравствуй
+ - 
+hidden - скрытый
+ - 
+hinge - петля
+ - 
+hmm - хмм
+ - 
+holy - святой
+ - 
+homophobic - гомофоб
+ - 
+honest - честный
+ - 
+honestly - честно говоря
+ - 
+hoping - надеясь
+ - 
+house's - дома
+ - 
+how's - как это
+ - 
+huh - хм
+ - 
+hunted - охотился
+ - 
+hyman - Хайман
+ - 
+i'd - Я бы
+ - 
+i'll - больной
+ - 
+i'm - я
+ - 
+i've - я
+ - 
+icreepy - icreepy
+ - 
+idiot - идиот
+ - 
+idol - идол
+ - 
+idramatic - idramatic
+ - 
+ii - б
+ - 
+illusion - иллюзия
+ - 
+illusions - иллюзии
+ - 
+inappropriate - несоответствующий
+ - 
+infirmary - лазарет
+ - 
+inhabit - обитать
+ - 
+inherently - по существу
+ - 
+inner - внутренний
+ - 
+interrupt - прерывание
+ - 
+interruption - прерывание
+ - 
+intrigued - заинтригован
+ - 
+iquirky - iquirky
+ - 
+irene - Ирэн
+ - 
+is - является
+ - 
+ish - иш
+ - 
+isn't - не
+ - 
+iso - ISO
+ - 
+ispooky - ispooky
+ - 
+issues - вопросы
+ - 
+it'll - это будет
+ - 
+it's - его
+ - 
+jesus - Иисус
+ - 
+joke's - шутка-х
+ - 
+josh - мистифицировать
+ - 
+jules - Жюль
+ - 
+julia - Юлия
+ - 
+kady - Кади
+ - 
+kept - хранится
+ - 
+key's - ключа
+ - 
+keyhole - замочная скважина
+ - 
+keys - ключи
+ - 
+khole - khole
+ - 
+kicked - ногами
+ - 
+killed - убитый
+ - 
+kingdom - Королевство
+ - 
+kissing - целование
+ - 
+knew - знал
+ - 
+knight's - рыцарский
+ - 
+knock - постучать
+ - 
+knocking - стук
+ - 
+knocks - стуки
+ - 
+knowing - знание
+ - 
+knows - знает
+ - 
+lance - копье
+ - 
+lance's - Ланса
+ - 
+lasted - продолжалась
+ - 
+laughing - смеющийся
+ - 
+laughs - смеется
+ - 
+lectures - лекции
+ - 
+librarian - библиотекарь
+ - 
+librarians - библиотекари
+ - 
+library - библиотека
+ - 
+lied - солгал
+ - 
+lips - губы
+ - 
+listening - прослушивание
+ - 
+locator - локатор
+ - 
+longer - дольше
+ - 
+looking - Ищу
+ - 
+looks - выглядит
+ - 
+loop - петля
+ - 
+lots - много
+ - 
+loved - любимый
+ - 
+mad - Сумасшедший
+ - 
+made - сделал
+ - 
+magic - магия
+ - 
+magical - волшебный
+ - 
+magically - волшебно
+ - 
+magicians - маги
+ - 
+majesty - величественность
+ - 
+makes - марки
+ - 
+malevolent - недоброжелательный
+ - 
+margo - Margo
+ - 
+margo's - для Margo
+ - 
+margolem - margolem
+ - 
+martini - мартини
+ - 
+mcallistair - mcallistair
+ - 
+mcallistair's - mcallistair-х
+ - 
+mcallistairs - mcallistairs
+ - 
+meat - мясо
+ - 
+men - люди
+ - 
+mess - беспорядок
+ - 
+messenger - посыльный
+ - 
+met - встретил
+ - 
+minds - умов
+ - 
+mine - мой
+ - 
+missed - пропущенный
+ - 
+mm - мм
+ - 
+mmm - ммм
+ - 
+mmmhmm - mmmhmm
+ - 
+moly - молибденовые
+ - 
+monster - монстр
+ - 
+months - месяцы
+ - 
+morrison - Моррисон
+ - 
+morrison's - Моррисона
+ - 
+mother's - мамин
+ - 
+moved - переехал
+ - 
+mrs - Г-жа
+ - 
+multiverse - мультивселенной
+ - 
+muntjac - мунжтак
+ - 
+musici - Musici
+ - 
+must've - Должно быть
+ - 
+mystery - тайна
+ - 
+naturally - естественно
+ - 
+needed - необходимый
+ - 
+needs - потребности
+ - 
+negotiate - вести переговоры
+ - 
+neitherlands - neitherlands
+ - 
+nickel - никель
+ - 
+nip - щипок
+ - 
+nowhere - нигде
+ - 
+nuts - орешки
+ - 
+oldest - самый старший
+ - 
+olive - оливковый
+ - 
+ones - те,
+ - 
+options - опции
+ - 
+ourselves - сами
+ - 
+outsider - аутсайдер
+ - 
+owns - владеет
+ - 
+pairing - спаривание
+ - 
+panting - задыхающийся
+ - 
+pardon - помилование
+ - 
+passes - проходит
+ - 
+patronizing - покровительствующий
+ - 
+paying - платеж
+ - 
+peeping - выглядывающий
+ - 
+pen - ручка
+ - 
+pennies - пенсы
+ - 
+penny - пенни
+ - 
+penny's - пенни
+ - 
+perhaps - возможно
+ - 
+perv - извращенец
+ - 
+perversion - извращение
+ - 
+pervert - извращенец
+ - 
+pescatarian - pescatarian
+ - 
+places - мест
+ - 
+pleasure - удовольствие
+ - 
+plover - ржанка
+ - 
+pooping - изматывать
+ - 
+pop - поп
+ - 
+pour - наливать
+ - 
+prank - шалость
+ - 
+prefer - предпочитать
+ - 
+prepared - подготовленный
+ - 
+pretend - делать вид
+ - 
+previously - предварительно
+ - 
+priest - священник
+ - 
+problematic - проблематичный
+ - 
+problems - проблемы
+ - 
+projecting - выступающий
+ - 
+projection - проекция
+ - 
+pronounce - произносить
+ - 
+protected - защищенный
+ - 
+pussy - киска
+ - 
+queen - Королева
+ - 
+queen's - ферзевый
+ - 
+quentin - Квентин
+ - 
+quentin's - Квентин
+ - 
+quest - поиск
+ - 
+questions - вопросов
+ - 
+rare - редкий
+ - 
+records - учет
+ - 
+reference - Справка
+ - 
+relatable - Relatable
+ - 
+relax - расслабиться
+ - 
+relieved - облегчение
+ - 
+relive - возродиться
+ - 
+remembered - вспомнил
+ - 
+reminds - напоминает
+ - 
+remission - ремиссия
+ - 
+reported - сообщается
+ - 
+reserve - резерв
+ - 
+residual - остаточный
+ - 
+resolved - решены
+ - 
+respects - почтение
+ - 
+response - ответ
+ - 
+responsibility - обязанность
+ - 
+restroom - комната отдыха
+ - 
+retained - сохраняется
+ - 
+returned - возвращенный
+ - 
+reveal - выявить
+ - 
+revealing - выявление
+ - 
+reveals - показывает
+ - 
+riddles - загадки
+ - 
+round - круглый
+ - 
+ruined - разрушенный
+ - 
+rules - правила
+ - 
+rum - ром
+ - 
+rumbling - урчание
+ - 
+rupert - Руперт
+ - 
+rupert's - Руперта
+ - 
+rye - рожь
+ - 
+safekeeping - хранение
+ - 
+said - сказал
+ - 
+sail - паруса
+ - 
+sailor's - моряка
+ - 
+sake - ради
+ - 
+sale - продажа
+ - 
+sanctum - святилище
+ - 
+sandwich - сэндвич
+ - 
+saved - сохранены
+ - 
+saw - увидел
+ - 
+saying - поговорка
+ - 
+says - говорит
+ - 
+scare - попугать
+ - 
+scared - испуганный
+ - 
+scoffs - издевается
+ - 
+scotch - скотч
+ - 
+screaming - кричащий
+ - 
+screams - крики
+ - 
+screwed - пьяный
+ - 
+secret - секрет
+ - 
+semester - семестр
+ - 
+sender - отправитель
+ - 
+sending - отправка
+ - 
+sent - послал
+ - 
+sentient - чувствующий
+ - 
+seriously - шутки в сторону
+ - 
+served - служил
+ - 
+services - Сервисы
+ - 
+shaking - сотрясение
+ - 
+shazi - Shazi
+ - 
+she'll - оболочка
+ - 
+she's - она
+ - 
+shep - Шеп
+ - 
+shh - тсс
+ - 
+shit - дерьмо
+ - 
+shoulders - плечи
+ - 
+shouldn't - не должен
+ - 
+shouting - крики
+ - 
+showers - ливни
+ - 
+shows - шоу
+ - 
+sicko - Сико
+ - 
+sides - стороны
+ - 
+sighs - вздохи
+ - 
+signed - подписанный
+ - 
+signing - подписание
+ - 
+sitting - сидящий
+ - 
+situations - ситуации
+ - 
+slamming - удары о воду
+ - 
+slave - рабыня
+ - 
+sleeping - спать
+ - 
+sleight - ловкость
+ - 
+slit - щель
+ - 
+slow - медленный
+ - 
+snaps - защелками
+ - 
+snuck - пробралась
+ - 
+solve - решать
+ - 
+someday - когда-нибудь
+ - 
+sorr - sorr
+ - 
+sounds - звуки
+ - 
+sparking - искрение
+ - 
+sparkling - сверкающий
+ - 
+speaking - Говорящий
+ - 
+spell - орфографии
+ - 
+spells - заклинания
+ - 
+spent - потраченный
+ - 
+spoilers - спойлеры
+ - 
+spy - шпион
+ - 
+squished - сплющенные
+ - 
+started - начал
+ - 
+starters - закуска
+ - 
+staying - пребывание
+ - 
+storing - хранения
+ - 
+strangers - незнакомцы
+ - 
+stuck - застрял
+ - 
+students - студенты
+ - 
+stupid - глупый
+ - 
+suicide - самоубийство
+ - 
+sullied - пятналась
+ - 
+sundown - заход солнца
+ - 
+super - супер
+ - 
+suppose - предполагать
+ - 
+surrounded - окруженный
+ - 
+sweetheart - возлюбленная
+ - 
+synced - синхронизирован
+ - 
+takes - принимает
+ - 
+taking - принятие
+ - 
+tale - рассказ
+ - 
+talking - говорящий
+ - 
+taste - вкус
+ - 
+taxes - налоги
+ - 
+tension - напряженность
+ - 
+tent - палатка
+ - 
+terrible - ужасный
+ - 
+terrifying - ужасающий
+ - 
+terrorized - терроризировали
+ - 
+tether - привязь
+ - 
+tethered - привязанный
+ - 
+there's - есть
+ - 
+they're - они
+ - 
+things - вещи
+ - 
+thinks - думает
+ - 
+throat - горло
+ - 
+throats - головорезы
+ - 
+tick - поставить галочку
+ - 
+ticking - тиканье
+ - 
+till - до
+ - 
+time's - времени
+ - 
+times - раз
+ - 
+toes - пальцы
+ - 
+told - сказал
+ - 
+took - взял
+ - 
+totally - полностью
+ - 
+touched - прикоснулся
+ - 
+touching - трогательный
+ - 
+tractor - трактор
+ - 
+translocation - транслокация
+ - 
+trapped - ловушке
+ - 
+traumatic - травматический
+ - 
+traveler - путешественник
+ - 
+traveling - путешествие
+ - 
+treasure - сокровище
+ - 
+tricks - трюки
+ - 
+tried - пытался
+ - 
+truly - действительно
+ - 
+trust - доверять
+ - 
+trustees - попечители
+ - 
+truths - истины
+ - 
+trying - пытаясь
+ - 
+tub - ванна
+ - 
+turning - превращение
+ - 
+turns - витки
+ - 
+twat - пизда
+ - 
+twist - твист
+ - 
+uh - эм
+ - 
+um - гм
+ - 
+uncle - дядя
+ - 
+uncomfortable - неудобный
+ - 
+underworld - подземный мир
+ - 
+underworld's - преступный мир
+ - 
+unfortunately - К сожалению
+ - 
+uniform - единообразный
+ - 
+unlike - В отличие от
+ - 
+unlock - отпереть
+ - 
+unlocked - разблокирована
+ - 
+unresolved - неразрешенный
+ - 
+upstairs - вверх по лестнице
+ - 
+used - используемый
+ - 
+useful - полезным
+ - 
+using - с помощью
+ - 
+vacation - отпуск
+ - 
+vagician - vagician
+ - 
+vellum - калька
+ - 
+vengeful - мстительный
+ - 
+waiting - ожидание
+ - 
+wake - будить
+ - 
+walls - стены
+ - 
+wanna - хочу
+ - 
+wanted - разыскивается
+ - 
+wants - хочет
+ - 
+warnings - предупреждения
+ - 
+was - был
+ - 
+wasn't - не было
+ - 
+watching - наблюдение
+ - 
+we'd - мы б
+ - 
+we're - мы
+ - 
+we've - мы в
+ - 
+wearing - носить
+ - 
+week's - неделе
+ - 
+weeks - недель
+ - 
+weird - странный
+ - 
+went - отправился
+ - 
+were - мы
+ - 
+weren't - не было
+ - 
+wha - ВАЗ
+ - 
+what's - какой
+ - 
+where's - где
+ - 
+wherever - где бы
+ - 
+whimsical - капризный
+ - 
+whispering - шепот
+ - 
+whispers - шепоты
+ - 
+whitespire - whitespire
+ - 
+who's - кто
+ - 
+whoa - тпру
+ - 
+william - Уильям
+ - 
+woke - просыпался
+ - 
+won't - не будет
+ - 
+wooden - деревянный
+ - 
+words - слова
+ - 
+worked - работал
+ - 
+worse - хуже
+ - 
+worthless - бесполезный
+ - 
+worthy - достойный
+ - 
+wouldn't - не будет
+ - 
+wrap - заворачивать
+ - 
+wwwaddicedcom - wwwaddicedcom
+ - 
+yank - дергать
+ - 
+years - лет
+ - 
+yells - вопит
+ - 
+yo - Эй
+ - 
+you'd - вы бы
+ - 
+you'll - Вы будете
+ - 
+you're - Вы
+ - 
+you've - вы имеете
+ - 
+zerts - zerts
+ - 
+ - 
+ - 

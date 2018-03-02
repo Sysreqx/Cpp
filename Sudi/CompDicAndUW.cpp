@@ -1,4 +1,4 @@
-// Сравнить словарь и уникальные слова
+/*// Сравнить словарь и уникальные слова
 
 #include <iostream>
 #include <fstream> //ifstream ofstream
@@ -8,50 +8,48 @@
 #include <vector>
 // #include <iomanip> // hz why
 using namespace std;
+#include "path.cpp" // подтянуть переменные
 
 int main()
 {
 	ifstream f1;
 	ifstream f2;
 	ofstream fout;
-	//Путь к файлу
-	string f1_path_in = "TempFiles\\misfits3s2e.srt";
-	string f1_path_out = "ForStudying\\misfits3s2e.srt";
-	string f2_path = "dic.txt";
+	*/
 
 	//Открыть файл который нужно отредактировать
-	f1.open(f1_path_in.substr(0, f1_path_in.size() - 4) + "OUT.txt");
+	f1.open(f1_path2.substr(0, f1_path2.size() - 4) + "OUT.txt");
 	// f1.open("misfits3s2eOUT.txt");
-	f2.open(f2_path);
+	f2.open(f2_path1);
 	//Создать выходной файл
-	fout.open(f1_path_out.substr(0, f1_path_out.size() - 4) + "WordsForStudying.txt");
+	fout.open(f1_path3.substr(0, f1_path3.size() - 4) + "WordsForStudying.txt");
 
-	string str;
-	vector<string> vec_str1;
-	vector<string> vec_str2;
+	string str_comp_dic_and_w1;
+	vector<string> vec_str_comp_dic_and_w1;
+	vector<string> vec_str_comp_dic_and_w2;
 
 	//отсортированные субтитры
-	while(f1 >> str)
+	while(f1 >> str_comp_dic_and_w1)
 	{
-		vec_str1.push_back(str);
-		vec_str1.push_back("\n");
+		vec_str_comp_dic_and_w1.push_back(str_comp_dic_and_w1);
+		vec_str_comp_dic_and_w1.push_back("\n");
 	}
 
 	//словарь
-	while(f2 >> str)
+	while(f2 >> str_comp_dic_and_w1)
 	{
-		vec_str2.push_back(str);
-		vec_str2.push_back("\n");
+		vec_str_comp_dic_and_w2.push_back(str_comp_dic_and_w1);
+		vec_str_comp_dic_and_w2.push_back("\n");
 	}
 
   //Сравнить файлы
-	for (int i = 0; i < vec_str1.size(); ++i)
+	for (int i = 0; i < vec_str_comp_dic_and_w1.size(); ++i)
 	{
-		for (int j = 0; j < vec_str2.size(); ++j)
+		for (int j = 0; j < vec_str_comp_dic_and_w2.size(); ++j)
 		{
-			if (vec_str1[i] == vec_str2[j])
+			if (vec_str_comp_dic_and_w1[i] == vec_str_comp_dic_and_w2[j])
 			{
-				vec_str1[i].erase(vec_str1[i].begin(), vec_str1[i].end());
+				vec_str_comp_dic_and_w1[i].erase(vec_str_comp_dic_and_w1[i].begin(), vec_str_comp_dic_and_w1[i].end());
 				--i;
 				continue;
 			}
@@ -59,15 +57,15 @@ int main()
 	}
 
 	//Сортировать массив
-	sort (vec_str1.begin(), vec_str1.end());
+	sort (vec_str_comp_dic_and_w1.begin(), vec_str_comp_dic_and_w1.end());
 
 	//Вывести в файл
-	for (int i = 0; i < vec_str1.size(); ++i)
+	for (int i = 0; i < vec_str_comp_dic_and_w1.size(); ++i)
 	{
 		//не выводить пустые строки
-		if (vec_str1[i].size() > 1)
+		if (vec_str_comp_dic_and_w1[i].size() > 1)
 		{
-			fout << vec_str1[i] << endl;
+			fout << vec_str_comp_dic_and_w1[i] << endl;
 		}
 	}
 
@@ -76,4 +74,4 @@ int main()
 	fout.close();
 
 	// system("pause");
-}
+/*}*/
