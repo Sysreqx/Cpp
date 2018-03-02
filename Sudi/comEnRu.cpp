@@ -45,7 +45,10 @@ int main()
 
 	for (int i = 0; i < vec_str_com_en_ru1.size(); ++i)
 	{
-			fout << vec_str_com_en_ru1[i] << " - " << vec_str_com_en_ru2[i];
+		if (vec_str_com_en_ru1[i].size() > 1 && vec_str_com_en_ru2[i].size() > 1)
+		{
+			fout << vec_str_com_en_ru1[i] << "  -  " << vec_str_com_en_ru2[i] << endl;
+		}
 	}
 
 	f1.close();
