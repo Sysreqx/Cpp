@@ -23,29 +23,29 @@ int main()
 	//Создать выходной файл
 	fout.open(f1_path4.substr(0, f1_path4.size() - 4) + "EnRu.txt");
 
-	string str;
-	vector<string> vec_str1;
-	vector<string> vec_str2;
+	string str_com_en_ru;
+	vector<string> vec_str_com_en_ru1;
+	vector<string> vec_str_com_en_ru2;
 
 	//английский
 	while(!f1.eof())
 	{
-		getline(f1, str);
-		vec_str1.push_back(str);
-		vec_str1.push_back("\n");
+		getline(f1, str_com_en_ru);
+		vec_str_com_en_ru1.push_back(str_com_en_ru);
+		vec_str_com_en_ru1.push_back("\n");
 	}
 
 	//русский
 	while(!f2.eof())
 	{
-		getline(f2, str);
-		vec_str2.push_back(str);
-		vec_str2.push_back("\n");
+		getline(f2, str_com_en_ru);
+		vec_str_com_en_ru2.push_back(str_com_en_ru);
+		vec_str_com_en_ru2.push_back("\n");
 	}
 
-	for (int i = 0; i < vec_str1.size(); ++i)
+	for (int i = 0; i < vec_str_com_en_ru1.size(); ++i)
 	{
-			fout << vec_str1[i] << " - " << vec_str2[i];
+			fout << vec_str_com_en_ru1[i] << " - " << vec_str_com_en_ru2[i];
 	}
 
 	f1.close();
