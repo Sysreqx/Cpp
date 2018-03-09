@@ -1,20 +1,21 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
-int Seq2m(int n)
+int AmN(int n)
 {
-	cin >> n;
 	if (n == 0)
 	{
 		return n;
 	}
-	return n + Seq2m(n);
+	int am = n % 10;
+	return am + AmN(n / 10);
 }
 
 int main()
 {
-	cout << Seq2m(0);
+	int n;
+	cin >> n;
+	cout << AmN(n);
 	system("pause");
 	return 0;
 }
