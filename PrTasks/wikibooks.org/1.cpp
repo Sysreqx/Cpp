@@ -16,7 +16,6 @@ int main()
 
 	cout << b << endl;
 
-	delete[] a;
 	system("pause");
 	return 0;
 }

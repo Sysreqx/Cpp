@@ -1,5 +1,5 @@
 //указать имя файла субтитров
-string subtitles_file_name = "The.Magicians.US.S03E05.A.Life.in.the.Day.1080p.AMZN.WEBRip.DDP5.1.x264-ViSUM.HI.srt";
+string subtitles_file_name = "Sherlock - 1x01 - A Study in Pink.HDTV.en.srt";
 
 string s_f_m = subtitles_file_name.substr(0, subtitles_file_name.size() - 4);
 
