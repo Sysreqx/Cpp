@@ -1,5 +1,5 @@
 //указать имя файла субтитров
-string subtitles_file_name = "Sherlock - 1x01 - A Study in Pink.HDTV.en.srt";
+string subtitles_file_name = "Heroes - 1x02 - Don't Look Back.en.srt";
 
 string s_f_m = subtitles_file_name.substr(0, subtitles_file_name.size() - 4);
 
