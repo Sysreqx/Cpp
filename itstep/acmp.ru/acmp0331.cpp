@@ -10,7 +10,7 @@ int main()
 	cin >> h >> ch >> m;
 	cin >> h_s >> m_s;
 
-	h = (h + h_s) % 24 + (m + m_s) / 60;
+	h = ((h + h_s) + (m + m_s) / 60) % 24;
 	m = (m + m_s) % 60;
 
 	cout << setfill('0') << setw(2) << h << ch << setfill('0') << setw(2) << m << endl;
