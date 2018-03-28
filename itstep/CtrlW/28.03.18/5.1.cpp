@@ -40,44 +40,31 @@ int main()
 		}
 		a1[i][cnt1] = max_row;
 		a2[i][cnt2] = max_col;
-
-		for (int k = 0; k < n; ++k)
-		{
-			if (a[i][k] == max_row)
-			{
-				a1[i][k] = max_row;
-			}
-			if (a[k][i] == max_col)
-			{
-				a2[k][i] = max_col;
-			}
-		}
-
 		max_row = 0;
 		max_col = 0;
 	}
 	cout << endl;
 
-	// check i| j->;
-/*	for (int i = 0; i < n; ++i)
-	{
-		for (int j = 0; j < n; ++j)
-		{
-			cout << a1[i][j] << " ";
-		}
-		cout << endl;
-	}
-	cout << endl;
+	//check i| j->;
+	// for (int i = 0; i < n; ++i)
+	// {
+	// 	for (int j = 0; j < n; ++j)
+	// 	{
+	// 		cout << a1[i][j] << " ";
+	// 	}
+	// 	cout << endl;
+	// }
+	// cout << endl;
 
-	for (int i = 0; i < n; ++i)
-	{
-		for (int j = 0; j < n; ++j)
-		{
-			cout << a2[j][i] << " ";
-		}
-		cout << endl;
-	}
-	cout << endl;*/
+	// for (int i = 0; i < n; ++i)
+	// {
+	// 	for (int j = 0; j < n; ++j)
+	// 	{
+	// 		cout << a2[j][i] << " ";
+	// 	}
+	// 	cout << endl;
+	// }
+	// cout << endl;
 
 	for (int i = 0; i < n; ++i)
 	{

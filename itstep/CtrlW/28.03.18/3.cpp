@@ -1,35 +1,53 @@
 #include <iostream>
-#include <time.h>
+#include <ctime>
 using namespace std;
 
-void countSort(int *a, int n) {
-	int b[101];
-	for (int i = 0; i < 101; ++i) {
-		b[i] = 0;
-	}
-	for (int i = 0; i < n; ++i) {
-		++b[a[i]];
-	}
-
-	for (int i = 0; i < 101; i++)
-	{
-		if (b[i] != 0)
-			cout << i << ' ';
-	}
-	
-}
 int main()
-{
-	srand(time(NULL));
-	int n = 10;
-	int *a = new int[n];
+{   
+	srand(time(0));
+	int n;
+	cin >> n;
+	int a[n];
+	int b[n];
 
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < n; ++i)
 	{
-		a[i] = rand() % 100;
+		a[i] = rand() % 10;
+		cout << a[i] << " ";
 	}
-	countSort(a, n);
+	cout << endl;
 
+	for (int i = 0; i < n - 1; i++)
+	{
+		for (int j = 0; j < n - i - 1; j++)
+		{
+			if (a[j] > a[j + 1])
+			{
+				// меняем элементы местами
+				int temp = a[j];
+				a[j] = a[j + 1];
+				a[j + 1] = temp;
+			}
+		}
+	}
+
+	int cnt = 0;
+	for (int i = 0, j = 0; i < n; ++i)
+	{
+		if (a[i] != a[i + 1])
+		{
+			b[j] = a[i];
+			++j;
+			++cnt;
+		}
+	}
+
+	for (int i = 0; i < cnt; ++i)
+	{
+		cout << b[i] << " ";
+	}
+	cout << endl;
+	
 	system("pause");
 	return 0;
 }
