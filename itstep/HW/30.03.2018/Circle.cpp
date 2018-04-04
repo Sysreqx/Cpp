@@ -47,4 +47,8 @@ std::string Circle::getColor()
 	return color;
 }
 
+std::string Circle::toString()
+{
+	return "Circle[color=" + color + ", radius=" + std::to_string(radius);
+}
 

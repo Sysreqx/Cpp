@@ -17,5 +17,7 @@ public:
 	void setRadius(double newRadius);
 	void setColor(std::string newColor);
 	std::string getColor();
+
+	std::string toString();
 };
 
