@@ -1,85 +1,46 @@
 #include <iostream>
-using namespace std;
+#include <string>
 
 int main()
-{   
-	int n;
-	cin >> n;
-
-	int i_i, l = 0, r = 0, r_last = 0, r_last_add = 0, r_last_subtract = 0;
-	for (int i = 0; i < n; ++i, i_i = 0, l = 0, r = 0, r_last = 0, r_last_add = 0, r_last_subtract = 0)
+{
+	std::string str, l_str, r_str;
+	int l_int_sum = 0, r_int_sum = 0, r_int_sum_add = -1, r_int_sum_subtract = -1, n;
+	std::cin >> n;
+	for (int k = 0; k < n; k++)
 	{
-		cin >> i_i;
-		// last digit
-		r_last += i_i % 10;
-		i_i /= 10;
-		// right digits sum, without last
-		for (int i = 0; i < 2; ++i)
+		std::cin >> str;
+		for (int i = 0; i < 6; ++i)
 		{
-			r += i_i % 10;
-			i_i /= 10;
-		}
-		// left digits sum
-		for (int i = 0; i < 3; ++i)
-		{
-			l += i_i % 10;
-			i_i /= 10;
-		}
-		//check
-		cout << r_last << endl;
-		cout << r << endl;
-		cout << l << endl;
-		r_last_add = r_last + 1;
-		r_last_subtract = r_last - 1;
-		cout << r_last_add << endl;
-		cout << r_last_subtract << endl;
-
-		// +
-		if (r_last_add > 9)
-		{
-			r_last_add = 0;
-			r += 1;
-			if (r == l)
-			{
-				cout << "Yes" << endl;
-			}
+			if (i < 3)
+				l_int_sum += (int)(str[i]) - 48;
 			else
-			{
-				cout << "No" << endl;
-			}
+				r_int_sum += (int)(str[i]) - 48;
+		}
+		if ((int)(str[5]) - 48 == 0)
+		{
+			r_int_sum_add = r_int_sum + 1;
+			r_int_sum_subtract = r_int_sum + 10;
+		}
+		else if ((int)(str[5]) - 48 == 9)
+		{
+			r_int_sum_subtract = r_int_sum - 1;
+			r_int_sum_add = r_int_sum - 8;
 		}
 		else
 		{
-			r = r + r_last_add;
-			if (r == l)
-			{
-				cout << "Yes" << endl;
-			}
-			else 
-			{
-				cout << "No" << endl;
-			}
+			r_int_sum_add = r_int_sum + 1;
+			r_int_sum_subtract = r_int_sum - 1;
 		}
-
-		// -
-		if (r_last_subtract < 0)
-		{
-			cout << "No" << endl;
-		}
+		if (r_int_sum_add == l_int_sum || r_int_sum_subtract == l_int_sum)
+			std::cout << "Yes" << std::endl;
 		else
-		{
-			r = r + r_last_subtract;
-			if (r == l)
-			{
-				cout << "Yes" << endl;
-			}
-			else 
-			{
-				cout << "No" << endl;
-			}
-		}
+			std::cout << "No" << std::endl;
+		l_int_sum = 0;
+		r_int_sum = 0;
 	}
-
-	system("pause");
+/*
+	std::cout << l_int_sum << std::endl;
+	std::cout << r_int_sum << std::endl;
+	system("pause");*/
 	return 0;
 }
