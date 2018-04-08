@@ -1,5 +1,5 @@
 //указать имя файла субтитров
-string subtitles_file_name = "The Magicians.US.S03E12 - The Fillorian Candidate.1080p.WEB.x264-TBS - HI.srt";
+string subtitles_file_name = "Dexter.S01E01.1080p.5.1Ch.BluRay.ReEnc-DeeJayAhmed.srt";
 
 string s_f_m = subtitles_file_name.substr(0, subtitles_file_name.size() - 4);
 
