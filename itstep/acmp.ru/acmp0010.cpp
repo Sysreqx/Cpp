@@ -1,35 +1,23 @@
 #include <iostream>
 #include <vector>
-#include <string>
 
 int main()
 {
-	int n;
-	std::cin >> n;
-	int** arr = new int*[n];
-	for (int i = 0; i < n; ++i)
-	{
-		arr[i] = new int[n];
-	}
+	long long a, b, c, d;
+	std::cin >> a >> b >> c >> d;
 
-	for (int i = 0; i < n; ++i)
+	std::vector<int> v;
+	for (int i = -100; i <= 100; ++i)
 	{
-		for (int j = 0; j < n; ++j)
+		if (a * i * i * i + b * i * i + c * i + d == 0)
 		{
-			std::cin >> arr[i][j];
+			v.push_back(i);
 		}
 	}
+	for (auto i : v)
+		std::cout << i << " ";
+	std::cout << std::endl;
 
-	std::vector<std::string> str;
-
-	
-
-	for (int i = 0; i < n; ++i)
-	{
-		delete[] arr[i];
-	}
-	delete[] arr;
-
-	system("pause");
+	// system("pause");
 	return 0;
 }
