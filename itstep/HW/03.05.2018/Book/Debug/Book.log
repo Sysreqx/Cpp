@@ -1,0 +1,6 @@
+﻿  Source.cpp
+c:\users\sysrq\source\repos\book\book\source.cpp(12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\sysrq\source\repos\book\book\source.cpp(26): warning C4018: '<': signed/unsigned mismatch
+c:\users\sysrq\source\repos\book\book\source.cpp(37): warning C4018: '<': signed/unsigned mismatch
+c:\users\sysrq\source\repos\book\book\source.cpp(48): warning C4018: '<': signed/unsigned mismatch
+  Book.vcxproj -> C:\Users\SysRq\source\repos\Book\Debug\Book.exe

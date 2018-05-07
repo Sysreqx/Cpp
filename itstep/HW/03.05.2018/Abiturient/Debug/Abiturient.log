@@ -1,0 +1,7 @@
+﻿  Source.cpp
+c:\users\sysrq\source\repos\abiturient\abiturient\source.cpp(14): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\sysrq\source\repos\abiturient\abiturient\source.cpp(50): warning C4018: '<': signed/unsigned mismatch
+c:\users\sysrq\source\repos\abiturient\abiturient\source.cpp(54): warning C4018: '<': signed/unsigned mismatch
+c:\users\sysrq\source\repos\abiturient\abiturient\source.cpp(70): warning C4018: '<': signed/unsigned mismatch
+c:\users\sysrq\source\repos\abiturient\abiturient\source.cpp(73): warning C4018: '<': signed/unsigned mismatch
+  Abiturient.vcxproj -> C:\Users\SysRq\source\repos\Abiturient\Debug\Abiturient.exe
