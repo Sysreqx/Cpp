@@ -1,0 +1,5 @@
+﻿  drob.cpp
+  main.cpp
+  Generating Code...
+c:\users\sysrq\source\repos\drob\drob\drob.cpp(104): warning C4172: returning address of local variable or temporary: tmp
+  drob.vcxproj -> C:\Users\SysRq\source\repos\drob\Debug\drob.exe
