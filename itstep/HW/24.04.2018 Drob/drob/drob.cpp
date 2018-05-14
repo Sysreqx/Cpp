@@ -146,6 +146,11 @@ bool operator==(const drob &a, const drob &b) {
 	return a.getDouble() == b.getDouble();
 }
 
+drob operator+(int a, const drob & b)
+{
+	return drob();
+}
+
 //c = a+5
 drob operator+(const drob & a, int b)
 {

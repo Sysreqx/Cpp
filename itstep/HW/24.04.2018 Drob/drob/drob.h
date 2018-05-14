@@ -11,13 +11,20 @@ public:
 	void setY(int y = 1);
 	int getX() const;
 	int getY() const;
-	
-	const drob & operator+=(const drob & a);
 
-	void operator-=(const drob &a);//this-=a
-	void operator*=(const drob &a);//this*=a
-	void operator/=(const drob &a);//this/=a
+	const drob & operator+=(const drob & a);
+	const drob & operator*=(const drob & a);
+	const drob & operator/=(const drob & a);
+	const drob & operator-=(const drob & a);
+
+	void operator-=(int a);//this-=a
+	void operator*=(int a);//this*=a
+	void operator/=(int a);//this/=a
 	void operator+=(int a);//this+=a
+	
+	//operator 
+	operator int() const;
+	operator double() const;
 
 	//перегрузка операции + в виде метода класса
 	//drob operator+(const drob& a) {
@@ -45,6 +52,7 @@ public:
 };
 
 //перегрузка операции + в виде  глобальной функции
+//drob drob
 drob operator+(const drob &a, const drob &b);
 drob operator-(const drob &a, const drob &b);
 drob operator*(const drob &a, const drob &b);
@@ -54,9 +62,29 @@ bool operator<(const drob &a, const drob &b);
 bool operator>=(const drob &a, const drob &b);
 bool operator<=(const drob &a, const drob &b);
 bool operator!=(const drob &a, const drob &b);
-bool operator==(const drob &a, const drob &b); 
-
+bool operator==(const drob &a, const drob &b);
+//int drob
+drob operator+(int a, const drob &b);
+drob operator-(int a, const drob &b);
+drob operator*(int a, const drob &b);
+drob operator/(int a, const drob &b);
+bool operator>(int a, const drob &b);
+bool operator<(int a, const drob &b);
+bool operator>=(int a, const drob &b);
+bool operator<=(int a, const drob &b);
+bool operator!=(int a, const drob &b);
+bool operator==(int a, const drob &b);
+//drob int
 drob operator+(const drob &a, int b);
+drob operator-(const drob &a, int b);
+drob operator*(const drob &a, int b);
+drob operator/(const drob &a, int b);
+bool operator>(const drob &a, int b);
+bool operator<(const drob &a, int b);
+bool operator>=(const drob &a, int b);
+bool operator<=(const drob &a, int b);
+bool operator!=(const drob &a, int b);
+bool operator==(const drob &a, int b);
 
 ostream &operator<<(ostream &out, const drob &a);
 istream &operator>>(istream &in, drob &a);
