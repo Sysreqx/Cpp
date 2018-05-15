@@ -32,17 +32,29 @@ const drob& drob::operator+=(const drob &a)
 	this->y = this->y * a.y;
 	return *this;
 }
-void drob::operator-=(const drob &a)
+const drob& drob::operator-=(const drob &a)
 {
 	this->x = this->x * a.y - this->y * a.x;
 	this->y = this->y * a.y;
 }
-void drob::operator*=(const drob &a)
+void drob::operator-=(int a)
+{
+	x -= a * y;
+}
+void drob::operator*=(int a)
+{
+	x *= a;
+}
+void drob::operator/=(int a)
+{
+	y *= a;
+}
+const drob& drob::operator*=(const drob &a)
 {
 	this->x = this->x * a.x;
 	this->y = this->y * a.y;
 }
-void drob::operator/=(const drob &a)
+const drob& drob::operator/=(const drob &a)
 {
 	this->x = this->x * a.y;
 	this->y = this->y * a.x;
@@ -81,6 +93,16 @@ void drob::operator+=(int a) {
 double drob::getDouble() const
 {
 	return double(x) / y;
+}
+
+drob::operator int() const
+{
+	return x / y;
+}
+
+drob::operator double() const
+{
+	return getDouble();
 }
 
 const drob & drob::operator++()
@@ -148,15 +170,119 @@ bool operator==(const drob &a, const drob &b) {
 
 drob operator+(int a, const drob & b)
 {
-	return drob();
+	drob c = b;
+	c.setX(b.getX() + a * b.getY());
+	return c;
+}
+
+drob operator-(int a, const drob & b)
+{
+	drob c = b;
+	c.setX(b.getX() - a * b.getY());
+	return c;
+}
+
+drob operator*(int a, const drob & b)
+{
+	drob c = b;
+	c.setX(b.getX() * a);
+	return c;
+}
+
+drob operator/(int a, const drob & b)
+{
+	drob c = b;
+	c.setY(b.getY() * a);
+	return c;
+}
+
+bool operator>(int a, const drob & b)
+{
+	return (double)a > b.getDouble();
+}
+
+bool operator<(int a, const drob & b)
+{
+	return (double)a < b.getDouble();
+}
+
+bool operator>=(int a, const drob & b)
+{
+	return (double)a >= b.getDouble();
+}
+
+bool operator<=(int a, const drob & b)
+{
+	return (double)a <= b.getDouble();
+}
+
+bool operator!=(int a, const drob & b)
+{
+	return (double)a != b.getDouble();
+}
+
+bool operator==(int a, const drob & b)
+{
+	return (double)a == b.getDouble();
 }
 
 //c = a+5
 drob operator+(const drob & a, int b)
 {
 	drob c = a;
-	c += b;
+	c.setX(a.getX() + b * a.getY());
 	return c;
+}
+
+drob operator-(const drob & a, int b)
+{
+	drob c = a;
+	c.setX(a.getX() - b * a.getY());
+	return c;
+}
+
+drob operator*(const drob & a, int b)
+{
+	drob c = a;
+	c.setX(a.getX() * b);
+	return c;
+}
+
+drob operator/(const drob & a, int b)
+{
+	drob c = a;
+	c.setY(a.getY() * b);
+	return c;
+}
+
+bool operator>(const drob & a, int b)
+{
+	return a.getDouble() > double(b);
+}
+
+bool operator<(const drob & a, int b)
+{
+	return a.getDouble() < double(b);
+}
+
+bool operator>=(const drob & a, int b)
+{
+	return a.getDouble() >= double(b);
+}
+
+bool operator<=(const drob & a, int b)
+{
+	return a.getDouble() <= double(b);
+}
+
+bool operator!=(const drob & a, int b)
+{
+	return a.getDouble() != double(b);
+}
+
+bool operator==(const drob & a, int b)
+{
+	return a.getDouble() == double(b);
 }
 
 ostream & operator<<(ostream & out, const drob & a)
