@@ -1,4 +1,5 @@
 #pragma once
+#include <algorithm>  
 #include <utility> //std::make_pair, std::pair
 #include <iostream>
 #include <vector>
@@ -18,7 +19,7 @@ using namespace std;
 class PrintQueue
 {
 private:
-	std::vector<std::pair<std::string, int>> Queue;
+	std::vector<std::pair<std::string, int> > Queue;
 	int Size;
 	/*
 	class Client
@@ -34,7 +35,18 @@ public:
 	PrintQueue();
 	~PrintQueue();
 	int getSize();
+	//Добаввить в очередь печати
 	void adToPrintQueue(std::string Name, int x);
+	//Очистить очередь печати
+	void clearPrintQueue();
+	//Удалять по одному, типа печатает
+	void PrintQueueMinus();
+	//Удалить из очереди по индексу
+	void PrintQueueErase(int a);
+	//Отсортировать очередь
+	void sortPrintQueue();
+	//reverse
+	void reverse();
 	std::pair<std::string, int> & operator[](int n);/*
 		std::ostream &operator<<(std::ostream &os, const PrintQueue& v);*/
 	void showQueue();

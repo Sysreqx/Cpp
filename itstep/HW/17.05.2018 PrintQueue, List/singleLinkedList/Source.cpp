@@ -1,14 +1,17 @@
 #include "singleLinkedList.h"
-
+#include <ctime>
 int main()
 {
+	srand(time(0));
 	singleLinkedList<int> l;
-	for (int i = 0; i < 7; i++)
-		l.push_back(i);
-	for (int i = 0; i < l.getSize(); i++)
-	{
-		cout << l[i] << endl;
-	}
+	int tmp;
+	for (int i = 0; i < 10; i++)
+		l.push_back(tmp = rand() % 10);
+	l.print(); 
+	std::cout << std::endl;
+	l.printReverse(); 
+	std::cout << std::endl;
+
 	system("pause");
 	return 0;
 }

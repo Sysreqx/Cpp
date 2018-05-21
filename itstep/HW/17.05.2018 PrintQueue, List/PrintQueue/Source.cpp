@@ -10,6 +10,19 @@ int main()
 	a.adToPrintQueue("coca-cola", 4);
 	a.adToPrintQueue("rosinka", 0);
 	a.showQueue();
+	std::cout << std::endl;
+	a.PrintQueueMinus();
+	a.showQueue();
+	std::cout << std::endl;
+	a.PrintQueueMinus();
+	a.showQueue();
+	std::cout << std::endl;
+	a.PrintQueueMinus();
+	a.showQueue();
+	std::cout << std::endl;
+	a.PrintQueueMinus();
+	a.showQueue();
+	std::cout << std::endl;
 	system("pause");
 	return 0;
 }
