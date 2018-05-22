@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <list>
+#include <iterator> // заголовок итераторов
 using namespace std;
 
 class Stack
@@ -15,5 +16,6 @@ public:
 	int& getTop();
 	int get_stack_size();
 	bool empty() const;
+	void print_stack();
 };
 

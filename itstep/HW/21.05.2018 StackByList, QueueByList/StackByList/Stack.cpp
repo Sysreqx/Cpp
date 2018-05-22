@@ -32,3 +32,10 @@ bool Stack::empty() const
 {
 	return !top;
 }
+
+void Stack::print_stack()
+{
+	cout << "Stack: ";
+	copy(stack.begin(), stack.end(), ostream_iterator<int>(cout, " ")); // вывод на экран элементов списка
+	cout << "\nПоследний элемент списка: " << stack.back();
+}

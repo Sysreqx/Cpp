@@ -26,6 +26,7 @@ void Queue::queueu_by_list_pop()
 	--queueu_by_list_size_variable;
 }
 
+
 void Queue::queueu_by_list_push(const int & val)
 {
 	queueu_by_list.push_back(val);
@@ -40,13 +41,4 @@ bool Queue::queueu_by_list_empty() const
 int Queue::queueu_by_list_size() const
 {
 	return queueu_by_list_size_variable;
-}
-
-void Queue::print_queueu_by_list()
-{
-	cout << "Список: ";
-	copy(queueu_by_list.begin(), queueu_by_list.end(), ostream_iterator<int>(cout, " ")); // вывод на экран элементов списка
-	cout << "\nПервый элемент списка: " << queueu_by_list.front();
-	cout << "\nПоследний элемент списка: " << queueu_by_list.back();
-	cout << endl;
 }
