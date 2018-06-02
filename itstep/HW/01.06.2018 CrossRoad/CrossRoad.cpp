@@ -129,22 +129,20 @@ void CrossRoad::greenLightOn()
 			<< cntSec << "-------------------\n";
 		ost += cntSec;
 
-		if (traffic.size() > 0)
-		{
 			while (ost >= 1)
 			{
-				traffic.erase(traffic.begin());
 				if (traffic1.size() > 0) {
-					traffic1.erase(traffic.begin());
-					ost -= 1;
+					traffic.erase(traffic.begin());
+				}
+				if (traffic1.size() > 0) {
+					traffic1.erase(traffic1.begin());
 				}
 				if (traffic2.size() > 0) {
-					traffic2.erase(traffic.begin());
-					ost -= 1;
+					traffic2.erase(traffic2.begin());
 				}
 				ost -= 1;
 			}
-		}
+		
 		print();
 		Sleep(1000);
 	}
