@@ -1,0 +1,145 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <memory>
+#include "admin.h"
+#include "developer.h"
+#include "saler.h"
+#include "organization.h"
+#include "anykey.h"
+using namespace std;
+
+void Interface(organization& itstep);
+void addAdmin(organization& itstep);
+void addDeveloper(organization& itstep);
+void addSaler(organization& itstep);
+void addAnykey(organization& itstep);
+void getInfoo(organization& itstep);
+
+int main()
+{
+	setlocale(0, "");
+	organization itstep("Академия Шаг", 100000);
+
+	/*
+	itstep.addEmployee(new admin("Вася", date_(5, 8, 1996), 1, 2, 3));
+	itstep.addEmployee(new saler("Катя", date_(1, 1, 1990), 0, 3, 300));
+	itstep.addEmployee(new anykey("Леха"));
+	itstep.deleteEmployee(3);
+	itstep.getInfo();
+	itstep.changeEmployeeExp(2, 10);
+	itstep.changeEmployeeGender(2, false);
+	itstep.changeEmployeeName(2, "Махрипуш");
+	itstep.changeEmployeeTBD(2, 2, 2, 2030);
+	itstep.getInfo();*/
+	Interface(itstep);
+
+	system("pause");
+}
+
+void Interface(organization& itstep)
+{
+	cout << "Выберите действие: " << endl;
+	cout << "\t1. Добавить админа" << endl;
+	cout << "\t2. Добавить разработчика" << endl;
+	cout << "\t3. Добавить продавца" << endl;
+	cout << "\t4. Добавить аникейшика" << endl;
+	cout << "\t5. Удалить работника" << endl;
+	cout << "\t6. Получить информацию по организации" << endl;
+	int choise = 0;
+	cin >> choise;
+	if (choise == 1)
+		addAdmin(itstep);
+	if (choise == 6)
+		getInfoo(itstep);
+	if (choise == 6)
+		getInfoo(itstep);
+}
+
+void addAdmin(organization& itstep)
+{
+	system("cls");
+	cout << "Введите имя администарота";
+	string name;
+	cin >> name;
+	cout << "Введите дату рождения через пробел, начинается со дня";
+	int day, month, year;
+	cin >> day >> month >> year;
+	cout << "Введите пол, true - мужской, false - женский";
+	bool gender;
+	cin >> gender;
+	cout << "Введите опыт работы";
+	int exp;
+	cin >> exp;
+	cout << "Введите количество обслуживаемых ПК";
+	int pc;
+	cin >> pc;
+	itstep.addEmployee(new admin(name, date_(day, month, year), gender, exp, pc));
+	Interface(itstep);
+}
+
+void addDeveloper(organization& itstep)
+{
+	system("cls");
+	cout << "Введите имя разработчика";
+	string name;
+	cin >> name;
+	cout << "Введите дату рождения через пробел, начинается со дня";
+	int day, month, year;
+	cin >> day >> month >> year;
+	cout << "Введите пол, true - мужской, false - женский";
+	bool gender;
+	cin >> gender;
+	cout << "Введите опыт работы";
+	int exp;
+	cin >> exp;
+	cout << "Знание языков(количество)";
+	int lc;
+	cin >> lc;
+	itstep.addEmployee(new developer(name, date_(day, month, year), gender, exp, lc));
+	Interface(itstep);
+}
+
+void addSaler(organization& itstep)
+{
+	system("cls");
+	cout << "Введите имя разработчика";
+	string name;
+	cin >> name;
+	cout << "Введите дату рождения через пробел, начинается со дня";
+	int day, month, year;
+	cin >> day >> month >> year;
+	cout << "Введите пол, true - мужской, false - женский";
+	bool gender;
+	cin >> gender;
+	cout << "Введите опыт работы";
+	int exp;
+	cin >> exp;
+	cout << "Введите количество продаж";
+	int cs;
+	cin >> cs;
+	itstep.addEmployee(saler(name, date_(day, month, year), gender, exp, cs));
+	Interface(itstep);
+}
+
+void addAnykey(organization& itstep)
+{
+	system("cls");
+	cout << "Введите имя разработчика";
+	string name;
+	cin >> name;
+	cout << "Введите дату рождения через пробел, начинается со дня";
+	int day, month, year;
+	cin >> day >> month >> year;
+	cout << "Введите пол, true - мужской, false - женский";
+	bool gender;
+	cin >> gender;
+	itstep.addEmployee(new anykey(name, date_(day, month, year), gender);
+	Interface(itstep);
+}
+
+void getInfoo(organization & itstep)
+{
+	itstep.getInfo();
+	Interface(itstep);
+}
