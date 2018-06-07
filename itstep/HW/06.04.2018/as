@@ -1,0 +1,247 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <memory>
+#include "admin.h"
+#include "developer.h"
+#include "saler.h"
+#include "organization.h"
+#include "anykey.h"
+using namespace std;
+
+void Interface(organization& itstep);
+void addAdmin(organization& itstep);
+void addDeveloper(organization& itstep);
+void addSaler(organization& itstep);
+void addAnykey(organization& itstep);
+void getInfoo(organization& itstep);
+void deleteEmployeeG(organization & itstep);
+void howMuchMoney(organization & itstep);
+
+void chngEmployeExp(organization& itstep);
+void chngEmployeGender(organization& itstep);
+void chngEmployeName(organization& itstep);
+void chngEmployeTBD(organization& itstep);
+
+
+int main()
+{
+	setlocale(0, "");
+	organization itstep("Àêàäåìèÿ Øàã", 100000);
+
+	/*
+	itstep.addEmployee(new admin("Âàñÿ", date_(5, 8, 1996), 1, 2, 3));
+	itstep.addEmployee(new saler("Êàòÿ", date_(1, 1, 1990), 0, 3, 300));
+	itstep.addEmployee(new anykey("Ëåõà"));
+	itstep.deleteEmployee(3);
+	itstep.getInfo();
+	itstep.changeEmployeeExp(2, 10);
+	itstep.changeEmployeeGender(2, false);
+	itstep.changeEmployeeName(2, "Ìàõðèïóø");
+	itstep.changeEmployeeTBD(2, 2, 2, 2030);
+	itstep.getInfo();*/
+	Interface(itstep);
+
+	system("pause");
+}
+
+void Interface(organization& itstep)
+{
+	cout << "Âûáåðèòå äåéñòâèå: " << endl;
+	cout << "\t1. Äîáàâèòü àäìèíà" << endl;
+	cout << "\t2. Äîáàâèòü ðàçðàáîò÷èêà" << endl;
+	cout << "\t3. Äîáàâèòü ïðîäàâöà" << endl;
+	cout << "\t4. Äîáàâèòü àíèêåéøèêà" << endl;
+	cout << "\t5. Óäàëèòü ðàáîòíèêà" << endl;
+	cout << "\t6. Ïîëó÷èòü èíôîðìàöèþ ïî îðãàíèçàöèè" << endl;
+	cout << "\t7.  Ñêîëüêî äîëæíà âûïëàòèòü îðãàíèçàöèÿ" << endl;
+	cout << "\t8.  Èçìåíèòü îïûò ðàáîòû ðàáîòíèêà" << endl;
+	cout << "\t9.  Èçìåíèòü ïîë ðàáîòíèêà" << endl;
+	cout << "\t10. Èçìåíèòü èìÿ ðàáîòíèêà" << endl;
+	cout << "\t11. Èçìåíèòü äàòó ðîæäåíèÿ ðàáîòíèêà" << endl;
+	int choise = 0;
+	cin >> choise;
+	if (choise == 1)
+		addAdmin(itstep);
+	if (choise == 2)
+		addDeveloper(itstep);
+	if (choise == 3)
+		addSaler(itstep);
+	if (choise == 4)
+		addAnykey(itstep);
+	if (choise == 5)
+		deleteEmployeeG(itstep);
+	if (choise == 6)
+		getInfoo(itstep);
+	if (choise == 7)
+		howMuchMoney(itstep);
+	if (choise == 8)
+		chngEmployeExp(itstep);
+	if (choise == 9)
+		chngEmployeGender(itstep);
+	if (choise == 10)
+		chngEmployeName(itstep);
+	if (choise == 11)
+		chngEmployeTBD(itstep);
+
+}
+
+void addAdmin(organization& itstep)
+{
+	system("cls");
+	cout << "Ââåäèòå èìÿ àäìèíèñòàðîòà" << endl;
+	string name;
+	cin >> name;
+	cout << "Ââåäèòå äàòó ðîæäåíèÿ ÷åðåç ïðîáåë, íà÷èíàåòñÿ ñî äíÿ" << endl;
+	int day, month, year;
+	cin >> day >> month >> year;
+	cout << "Ââåäèòå ïîë, true - ìóæñêîé, false - æåíñêèé" << endl;
+	bool gender;
+	cin >> gender;
+	cout << "Ââåäèòå îïûò ðàáîòû" << endl;
+	int exp;
+	cin >> exp;
+	cout << "Ââåäèòå êîëè÷åñòâî îáñëóæèâàåìûõ ÏÊ" << endl;
+	int pc;
+	cin >> pc;
+	itstep.addEmployee(new admin(name, date_(day, month, year), gender, exp, pc));
+	system("cls");
+	Interface(itstep);
+}
+
+void addDeveloper(organization& itstep)
+{
+	system("cls");
+	cout << "Ââåäèòå èìÿ ðàçðàáîò÷èêà" << endl;
+	string name;
+	cin >> name;
+	cout << "Ââåäèòå äàòó ðîæäåíèÿ ÷åðåç ïðîáåë, íà÷èíàåòñÿ ñî äíÿ" << endl;
+	int day, month, year;
+	cin >> day >> month >> year;
+	cout << "Ââåäèòå ïîë, true - ìóæñêîé, false - æåíñêèé" << endl;
+	bool gender;
+	cin >> gender;
+	cout << "Ââåäèòå îïûò ðàáîòû" << endl;
+	int exp;
+	cin >> exp;
+	cout << "Çíàíèå ÿçûêîâ(êîëè÷åñòâî)" << endl;
+	int lc;
+	cin >> lc;
+	itstep.addEmployee(new developer(name, date_(day, month, year), gender, exp, lc));
+	system("cls");
+	Interface(itstep);
+}
+
+void addSaler(organization& itstep)
+{
+	system("cls");
+	cout << "Ââåäèòå èìÿ ïðîäàâöà" << endl;
+	string name;
+	cin >> name;
+	cout << "Ââåäèòå äàòó ðîæäåíèÿ ÷åðåç ïðîáåë, íà÷èíàåòñÿ ñî äíÿ" << endl;
+	int day, month, year;
+	cin >> day >> month >> year;
+	cout << "Ââåäèòå ïîë, true - ìóæñêîé, false - æåíñêèé" << endl;
+	bool gender;
+	cin >> gender;
+	cout << "Ââåäèòå îïûò ðàáîòû" << endl;
+	int exp;
+	cin >> exp;
+	cout << "Ââåäèòå êîëè÷åñòâî ïðîäàæ" << endl;
+	int cs;
+	cin >> cs;
+	itstep.addEmployee(new saler(name, date_(day, month, year), gender, exp, cs));
+	system("cls");
+	Interface(itstep);
+}
+
+void addAnykey(organization& itstep)
+{
+	system("cls");
+	cout << "Ââåäèòå èìÿ àíèêåéøèêà" << endl;
+	string name;
+	cin >> name;
+	cout << "Ââåäèòå äàòó ðîæäåíèÿ ÷åðåç ïðîáåë, íà÷èíàåòñÿ ñî äíÿ" << endl;
+	int day, month, year;
+	cin >> day >> month >> year;
+	cout << "Ââåäèòå ïîë, true - ìóæñêîé, false - æåíñêèé" << endl;
+	bool gender;
+	cin >> gender;
+	itstep.addEmployee(new anykey(name, date_(day, month, year), gender));
+	system("cls");
+	Interface(itstep);
+}
+
+void getInfoo(organization & itstep)
+{
+	itstep.getInfo();
+	Interface(itstep);
+}
+
+void deleteEmployeeG(organization & itstep)
+{
+	system("cls");
+	cout << "Ââåäèòå ïîçèöèþ" << endl;
+	int position;
+	cin >> position;
+	itstep.deleteEmployee(position);
+	system("cls");
+	Interface(itstep);
+}
+
+void howMuchMoney(organization & itstep)
+{
+	system("cls");
+	std::cout << itstep.allSalary() << endl;
+	Interface(itstep);
+}
+
+void chngEmployeExp(organization& itstep) {
+	system("cls");
+	cout << "Ââåäèòå ïîçèöèþ" << endl;
+	int position;
+	cin >> position;
+	int exp;
+	cin >> exp;
+	itstep.changeEmployeeExp(position, exp);
+	system("cls");
+	Interface(itstep);
+}
+
+void chngEmployeGender(organization& itstep) {
+	system("cls");
+	cout << "Ââåäèòå ïîçèöèþ" << endl;
+	int position;
+	cin >> position;
+	bool gender;
+	cin >> gender;
+	itstep.changeEmployeeGender(position, gender);
+	system("cls");
+	Interface(itstep);
+}
+
+void chngEmployeName(organization& itstep) {
+	system("cls");
+	cout << "Ââåäèòå ïîçèöèþ" << endl;
+	int position;
+	cin >> position;
+	cout << "Ââåäèòå èìÿ" << endl;
+	string name;
+	cin >> name;
+	itstep.changeEmployeeName(position, name);
+	system("cls");
+	Interface(itstep);
+}
+
+void chngEmployeTBD(organization& itstep) {
+	system("cls");
+	cout << "Ââåäèòå ïîçèöèþ" << endl;
+	int position;
+	cin >> position;
+	cout << "Ââåäèòå äàòó ðîæäåíèÿ" << endl;
+	int day, month, year;
+	cin >> day >> month >> year;
+	itstep.changeEmployeeTBD(position, day, month, year);
+	system("cls");
+	Interface(itstep);
+}
