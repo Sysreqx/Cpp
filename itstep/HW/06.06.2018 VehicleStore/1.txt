@@ -1,0 +1,9 @@
+Whatever name;
+Bike;Black;BMX;200;1;2000;0;100;
+Car;Red;Alfa Romeo;300;4;5000;700;4;
+Boat;Blue;Plavun;250;2;35000;Good;Sailboat;
+Plane;White;Eclipse 500;694;4;1500000;657;BlueSky;
+Bus;Yellow;4X;300;4;43000;700;228;
+Tank;Green;Destroyer;200;6;1800;200000;9999;
+WaterScooter;Blue;WaveRunner;80;2;7000;Good;WaveRunner;
+Helicopter;Orange;Hughes TH-55 Osage;153;3;3110;3110;4;
