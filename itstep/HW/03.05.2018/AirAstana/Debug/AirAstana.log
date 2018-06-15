@@ -1,6 +1,0 @@
-﻿  Source.cpp
-c:\users\sysrq\source\repos\airastana\airastana\source.cpp(25): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-c:\users\sysrq\source\repos\airastana\airastana\source.cpp(42): warning C4018: '<': signed/unsigned mismatch
-c:\users\sysrq\source\repos\airastana\airastana\source.cpp(53): warning C4018: '<': signed/unsigned mismatch
-c:\users\sysrq\source\repos\airastana\airastana\source.cpp(66): warning C4018: '<': signed/unsigned mismatch
-  AirAstana.vcxproj -> C:\Users\SysRq\source\repos\AirAstana\Debug\AirAstana.exe

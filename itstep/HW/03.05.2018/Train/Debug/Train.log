@@ -1,6 +1,0 @@
-﻿  Source.cpp
-c:\users\sysrq\source\repos\train\train\source.cpp(13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-c:\users\sysrq\source\repos\train\train\source.cpp(28): warning C4018: '<': signed/unsigned mismatch
-c:\users\sysrq\source\repos\train\train\source.cpp(40): warning C4018: '<': signed/unsigned mismatch
-c:\users\sysrq\source\repos\train\train\source.cpp(51): warning C4018: '<': signed/unsigned mismatch
-  Train.vcxproj -> C:\Users\SysRq\source\repos\Train\Debug\Train.exe

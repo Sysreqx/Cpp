@@ -1,6 +1,0 @@
-﻿  Source.cpp
-c:\users\sysrq\source\repos\worker\worker\source.cpp(12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-c:\users\sysrq\source\repos\worker\worker\source.cpp(27): warning C4018: '<': signed/unsigned mismatch
-c:\users\sysrq\source\repos\worker\worker\source.cpp(35): warning C4018: '<': signed/unsigned mismatch
-c:\users\sysrq\source\repos\worker\worker\source.cpp(43): warning C4018: '<': signed/unsigned mismatch
-  Worker.vcxproj -> C:\Users\SysRq\source\repos\Worker\Debug\Worker.exe
