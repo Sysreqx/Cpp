@@ -1,4 +1,4 @@
-#include "FileCombine.h"
+п»ї#include "FileCombine.h"
 
 void FileCombine::FileCombineFunc(string fileName = "Dictionary.txt")
 {
@@ -7,18 +7,18 @@ void FileCombine::FileCombineFunc(string fileName = "Dictionary.txt")
 	ofstream fout;
 	//string fileName = "Dictionary.txt";
 
-	//Открыть файл который нужно отредактировать
+	//РћС‚РєСЂС‹С‚СЊ С„Р°Р№Р» РєРѕС‚РѕСЂС‹Р№ РЅСѓР¶РЅРѕ РѕС‚СЂРµРґР°РєС‚РёСЂРѕРІР°С‚СЊ
 	f1.open(fileName);
 	f2.open(fileName.substr(0, fileName.size() - 4) + ".en.ru.txt");
 	// f1.open("misfits3s2eOUT.txt");
-	//Создать выходной файл
+	//РЎРѕР·РґР°С‚СЊ РІС‹С…РѕРґРЅРѕР№ С„Р°Р№Р»
 	fout.open(fileName.substr(0, fileName.size() - 4) + "EnRu.txt");
 
 	string str_com_en_ru;
 	vector<string> vec_str_com_en_ru1;
 	vector<string> vec_str_com_en_ru2;
 
-	//английский
+	//Р°РЅРіР»РёР№СЃРєРёР№
 	while (!f1.eof())
 	{
 		getline(f1, str_com_en_ru);
@@ -26,7 +26,7 @@ void FileCombine::FileCombineFunc(string fileName = "Dictionary.txt")
 		vec_str_com_en_ru1.push_back("\n");
 	}
 
-	//русский
+	//СЂСѓСЃСЃРєРёР№
 	while (!f2.eof())
 	{
 		getline(f2, str_com_en_ru);
@@ -49,7 +49,7 @@ void FileCombine::FileCombineFunc(string fileName = "Dictionary.txt")
 
 void FileCombine::addToMap(map<string, string>& m)
 {
-	SetConsoleCP(1251);// установка кодовой страницы win-cp 1251 в поток ввода
+	SetConsoleCP(1251);// СѓСЃС‚Р°РЅРѕРІРєР° РєРѕРґРѕРІРѕР№ СЃС‚СЂР°РЅРёС†С‹ win-cp 1251 РІ РїРѕС‚РѕРє РІРІРѕРґР°
 	SetConsoleOutputCP(1251);
 	ifstream f("DictionaryEnRu.txt");
 	string s1, s2, s;

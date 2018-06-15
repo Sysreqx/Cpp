@@ -1,4 +1,4 @@
-#include "developer.h"
+ï»¿#include "developer.h"
 
 developer::developer(string name, date_ bdate, bool gender, int exp, int cntLangs)
 	:employee(name, bdate, gender, exp)
@@ -26,5 +26,5 @@ double developer::getCoef() const
 void developer::info() const 
 {
 	employee::info();
-	cout << "\nÊîë-âî ÿçûêîâ :" << cntLangs;
+	cout << "\nÐšÐ¾Ð»-Ð²Ð¾ ÑÐ·Ñ‹ÐºÐ¾Ð² :" << cntLangs;
 }

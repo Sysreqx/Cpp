@@ -1,4 +1,4 @@
-#include <string>
+﻿#include <string>
 #include <iostream>
 #include <ctime>
 using namespace std;
@@ -11,12 +11,12 @@ int throwCube(int User_num, int PC_num)
 	if (PC_num == 0)
 	{
 		cout << PC << "starting" << endl;
-		//Счет
+		//РЎС‡РµС‚
 		int score_PC = 0;
 		int tmp_score_PC = 0;
 		int score_User = 0;
 		int tmp_score_User = 0;
-		//Кубики
+		//РљСѓР±РёРєРё
 		int cube1, cube2;
 	
 		for (int i = 0; i < 4; ++i)
@@ -40,7 +40,7 @@ int throwCube(int User_num, int PC_num)
 			cube2 = 1 + rand() % 6;
 			tmp_score_User = cube1 + cube2;
 			score_User += tmp_score_User;
-			// Вывести временный счет
+			// Р’С‹РІРµСЃС‚Рё РІСЂРµРјРµРЅРЅС‹Р№ СЃС‡РµС‚
 			cout << PC << tmp_score_PC << " " << User << tmp_score_User << endl;
 			if (i == 3)
 			{
@@ -64,12 +64,12 @@ int throwCube(int User_num, int PC_num)
 	else
 	{
 		cout << User << "starting" << endl;
-		//Счет
+		//РЎС‡РµС‚
 		int score_PC = 0;
 		int tmp_score_PC = 0;
 		int score_User = 0;
 		int tmp_score_User = 0;
-		//Кубики
+		//РљСѓР±РёРєРё
 		int cube1, cube2;
 	
 		for (int i = 0; i < 4; ++i)
@@ -94,7 +94,7 @@ int throwCube(int User_num, int PC_num)
 			tmp_score_PC = cube1 + cube2;
 			score_PC += tmp_score_PC;
 
-			// Вывести временный счет
+			// Р’С‹РІРµСЃС‚Рё РІСЂРµРјРµРЅРЅС‹Р№ СЃС‡РµС‚
 			cout << User << tmp_score_User << " " << PC << tmp_score_PC << endl;
 			if (i == 3)
 			{
@@ -129,7 +129,7 @@ int main()
 	int PC_num;
 	int cube1, cube2;
 
-	// Определить первого
+	// РћРїСЂРµРґРµР»РёС‚СЊ РїРµСЂРІРѕРіРѕ
 	if (User_num == 1)
 		PC_num = 0;
 	else

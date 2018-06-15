@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include <string>
 #include <vector>
@@ -24,7 +24,7 @@ public:
 	std::string getPatronymic() const;
 	std::string getAdress() const;
 	int getArithmeticMean() const;
-	//перегрузка
+	//РїРµСЂРµРіСЂСѓР·РєР°
 	bool operator==(const Abiturient& a) const;
 	//Abiturient& operator[](int index) { return arithmeticMean; }
 	//constructor
@@ -32,6 +32,6 @@ public:
 	//destructor
 	~Abiturient();
 };
-//перегрузка
+//РїРµСЂРµРіСЂСѓР·РєР°
 std::ostream& operator << (std::ostream &out, const Abiturient &a);
 

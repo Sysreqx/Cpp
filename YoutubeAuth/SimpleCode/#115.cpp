@@ -1,16 +1,16 @@
-#include <iostream>
+﻿#include <iostream>
 #include <string>
 #include <fstream>
 using namespace std;
 
-// сохранение данных в файл
+// СЃРѕС…СЂР°РЅРµРЅРёРµ РґР°РЅРЅС‹С… РІ С„Р°Р№Р»
 
 
 int main()
 {
 	// path to file
 	string path = "myFile.txt";
-	ofstream fout; // Поток out будем использовать для записи
+	ofstream fout; // РџРѕС‚РѕРє out Р±СѓРґРµРј РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РґР»СЏ Р·Р°РїРёСЃРё
 	//Rewrite file
 	// fout.open(path);
 
@@ -34,7 +34,7 @@ int main()
 
 	fout.close();
 
-	// ifstream in;  // Поток in будем использовать для чтения
+	// ifstream in;  // РџРѕС‚РѕРє in Р±СѓРґРµРј РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РґР»СЏ С‡С‚РµРЅРёСЏ
 	// in.open("input.txt");
 	
 }

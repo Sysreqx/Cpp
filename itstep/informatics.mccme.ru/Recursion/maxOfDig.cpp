@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 using namespace std;
 int maxOfDig(int n, int max = 0)
 {

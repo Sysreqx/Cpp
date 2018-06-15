@@ -1,17 +1,17 @@
-#include <iostream>
+﻿#include <iostream>
 #include <string>
 using namespace std;
 
 /*
-Что такое класс
-Что такое объект класса
+Р§С‚Рѕ С‚Р°РєРѕРµ РєР»Р°СЃСЃ
+Р§С‚Рѕ С‚Р°РєРѕРµ РѕР±СЉРµРєС‚ РєР»Р°СЃСЃР°
 */
 
 class Human
 {
-	//Идентификатор доступа
+	//РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РґРѕСЃС‚СѓРїР°
 public:
-	// Свойства класса, поля класса
+	// РЎРІРѕР№СЃС‚РІР° РєР»Р°СЃСЃР°, РїРѕР»СЏ РєР»Р°СЃСЃР°
 	int age;
 	int weight;
 	int height;
@@ -28,7 +28,7 @@ public:
 
 int main()
 {
-	//firstHuman - объект класса Human
+	//firstHuman - РѕР±СЉРµРєС‚ РєР»Р°СЃСЃР° Human
 	Human firstHuman;
 
 	firstHuman.age = 30;

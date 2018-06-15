@@ -1,4 +1,4 @@
-// comment
+﻿// comment
 
 #include <iostream>
 
@@ -11,8 +11,8 @@ using namespace std;
 
 int main() {
 	
-	ifstream in;  // Поток in будем использовать для чтения
-	ofstream out; // Поток out будем использовать для записи
+	ifstream in;  // РџРѕС‚РѕРє in Р±СѓРґРµРј РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РґР»СЏ С‡С‚РµРЅРёСЏ
+	ofstream out; // РџРѕС‚РѕРє out Р±СѓРґРµРј РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РґР»СЏ Р·Р°РїРёСЃРё
 
 	in.open("input.txt");
 	out.open("output.txt");

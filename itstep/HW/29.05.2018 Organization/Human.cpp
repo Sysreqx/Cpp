@@ -1,4 +1,4 @@
-#include "human.h"
+ï»¿#include "human.h"
 
 
 
@@ -46,10 +46,10 @@ void human::setName(string name)
 
 void human::info() const
 {
-	cout << "Èìÿ: " << name << endl;
-	cout << "Äàòà ðîæäåíèÿ: " << bdate << endl;
-	cout << "Ïîë: ";
-	cout << (gender == 0 ? "æåíñêèé" : "ìóæñêîé");
+	cout << "Ð˜Ð¼Ñ: " << name << endl;
+	cout << "Ð”Ð°Ñ‚Ð° Ñ€Ð¾Ð¶Ð´ÐµÐ½Ð¸Ñ: " << bdate << endl;
+	cout << "ÐŸÐ¾Ð»: ";
+	cout << (gender == 0 ? "Ð¶ÐµÐ½ÑÐºÐ¸Ð¹" : "Ð¼ÑƒÐ¶ÑÐºÐ¾Ð¹");
 }
 
 

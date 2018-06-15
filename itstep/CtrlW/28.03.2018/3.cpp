@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <ctime>
 using namespace std;
 
@@ -23,7 +23,7 @@ int main()
 		{
 			if (a[j] > a[j + 1])
 			{
-				// меняем элементы местами
+				// РјРµРЅСЏРµРј СЌР»РµРјРµРЅС‚С‹ РјРµСЃС‚Р°РјРё
 				int temp = a[j];
 				a[j] = a[j + 1];
 				a[j + 1] = temp;

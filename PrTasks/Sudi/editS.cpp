@@ -1,4 +1,4 @@
-// Сравнить словарь и уникальные слова
+﻿// РЎСЂР°РІРЅРёС‚СЊ СЃР»РѕРІР°СЂСЊ Рё СѓРЅРёРєР°Р»СЊРЅС‹Рµ СЃР»РѕРІР°
 
 #include <iostream>
 #include <fstream> //ifstream ofstream
@@ -8,7 +8,7 @@
 #include <vector>
 // #include <iomanip> // hz why
 using namespace std;
-#include "path.cpp" // подтянуть переменные
+#include "path.cpp" // РїРѕРґС‚СЏРЅСѓС‚СЊ РїРµСЂРµРјРµРЅРЅС‹Рµ
 
 int main()
 {
@@ -16,16 +16,16 @@ int main()
 	ifstream f2;
 	ofstream fout;
 
-	//Открыть файл который нужно отредактировать
+	//РћС‚РєСЂС‹С‚СЊ С„Р°Р№Р» РєРѕС‚РѕСЂС‹Р№ РЅСѓР¶РЅРѕ РѕС‚СЂРµРґР°РєС‚РёСЂРѕРІР°С‚СЊ
 	f1.open(f1_path_editS);
-	//Создать выходной файл
+	//РЎРѕР·РґР°С‚СЊ РІС‹С…РѕРґРЅРѕР№ С„Р°Р№Р»
 	fout.open(f1_path_editS.substr(0, f1_path_editS.size() - 4) + "(edit).srt");
 
 	string str_editS1;
 	char ch_editS1;
 	vector<string> vec_str_editS1;
 
-  //Закинуть символы только если это буквы или пробел
+  //Р—Р°РєРёРЅСѓС‚СЊ СЃРёРјРІРѕР»С‹ С‚РѕР»СЊРєРѕ РµСЃР»Рё СЌС‚Рѕ Р±СѓРєРІС‹ РёР»Рё РїСЂРѕР±РµР»
 	while(f1.get(ch_editS1))
 	{
 		if ((ch_editS1 >= 65 && ch_editS1 <= 90) || (ch_editS1 >= 97 && ch_editS1 <= 122) || ch_editS1 == 32 || ch_editS1 == 39 || ch_editS1 == 10)
@@ -43,13 +43,13 @@ int main()
 		}
 	}
 
-	//Сортировать массив
+	//РЎРѕСЂС‚РёСЂРѕРІР°С‚СЊ РјР°СЃСЃРёРІ
 	sort (vec_str_editS1.begin(), vec_str_editS1.end());
 
-	//Вывести в файл
+	//Р’С‹РІРµСЃС‚Рё РІ С„Р°Р№Р»
 	for (int i = 0; i < vec_str_editS1.size(); ++i)
 	{
-		//не выводить пустые строки
+		//РЅРµ РІС‹РІРѕРґРёС‚СЊ РїСѓСЃС‚С‹Рµ СЃС‚СЂРѕРєРё
 		if (vec_str_editS1[i].size() > 1)
 		{
 			fout << vec_str_editS1[i] << endl;
@@ -60,8 +60,8 @@ int main()
 	f2.close();
 	fout.close();
 
-	#include "UnicWords.cpp" // подтянуть file
-	#include "CompDicAndUW.cpp" // подтянуть file
+	#include "UnicWords.cpp" // РїРѕРґС‚СЏРЅСѓС‚СЊ file
+	#include "CompDicAndUW.cpp" // РїРѕРґС‚СЏРЅСѓС‚СЊ file
 
 	// system("pause");
 }

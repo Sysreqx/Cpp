@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include"tetrapoda.h"
 class Lizard: public virtual tetrapoda
 {

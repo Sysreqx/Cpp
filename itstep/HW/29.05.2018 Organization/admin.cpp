@@ -1,4 +1,4 @@
-#include "admin.h"
+ï»¿#include "admin.h"
 
 admin::admin(string name, date_ bdate, bool gender, int exp,int cntPC)
 	:employee(name,bdate,gender,exp)
@@ -26,5 +26,5 @@ double admin::getCoef() const
 void admin::info() const
 {
 	this->employee::info();
-	cout << "\nÊîë-âî àïïàðàòîâ :" << cntPC;
+	cout << "\nÐšÐ¾Ð»-Ð²Ð¾ Ð°Ð¿Ð¿Ð°Ñ€Ð°Ñ‚Ð¾Ð² :" << cntPC;
 }

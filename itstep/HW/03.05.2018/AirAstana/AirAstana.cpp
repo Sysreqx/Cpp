@@ -1,4 +1,4 @@
-#include "AirAstana.h"
+п»ї#include "AirAstana.h"
 
 std::string AirAstana::getDestination() const
 {
@@ -76,7 +76,7 @@ void AirAstana::setFlightNumber(int FlightNumber)
 
 AirAstana::AirAstana(std::string Destination, std::string TypeOfAircraft, int Hour, int Minutes, std::string DaysOfTheWeek, int FlightNumber)
 {
-	//конец объявления
+	//РєРѕРЅРµС† РѕР±СЉСЏРІР»РµРЅРёСЏ
 	setDestination(Destination);
 	setTypeOfAircraft(TypeOfAircraft);
 	setDepartureTime(Hour, Minutes);

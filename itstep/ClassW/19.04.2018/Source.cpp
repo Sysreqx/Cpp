@@ -1,4 +1,4 @@
-#include "Vector_.h"
+﻿#include "Vector_.h"
 #include <ctime>
 
 int main()

@@ -1,11 +1,11 @@
-#include <iostream>
+﻿#include <iostream>
 #include <string>
 // #define DEBUG
 using namespace std;
 
-// Препроцессор
+// РџСЂРµРїСЂРѕС†РµСЃСЃРѕСЂ
 // #define
-// Макрос функция
+// РњР°РєСЂРѕСЃ С„СѓРЅРєС†РёСЏ
 
 int main()
 {

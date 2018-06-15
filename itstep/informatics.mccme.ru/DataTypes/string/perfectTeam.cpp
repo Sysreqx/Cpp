@@ -1,4 +1,4 @@
-#include <algorithm>
+﻿#include <algorithm>
 #include <iostream>   // std::cout
 #include <string>     // std::string, std::stoi
 using namespace std;

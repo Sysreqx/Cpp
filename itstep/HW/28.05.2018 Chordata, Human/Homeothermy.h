@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "Chordata.h"
 //mammals
 class Homeothermy :

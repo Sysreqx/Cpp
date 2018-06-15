@@ -1,8 +1,8 @@
-#include <iostream>
+﻿#include <iostream>
 #include <string>
 using namespace std;
 
-// Препроцессор
+// РџСЂРµРїСЂРѕС†РµСЃСЃРѕСЂ
 // #define
 
 int main()

@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+﻿#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -16,16 +16,16 @@ int main() {
 
 
 /*
-//хз почему не работает
+//С…Р· РїРѕС‡РµРјСѓ РЅРµ СЂР°Р±РѕС‚Р°РµС‚
 #include <iostream>     // std::cout
 #include <vector>       // std::vector
 
 int main()
 {
 	int cnt = 0;
-	// максимальное число в очереди 1 с 8.00 по 20.00
+	// РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ С‡РёСЃР»Рѕ РІ РѕС‡РµСЂРµРґРё 1 СЃ 8.00 РїРѕ 20.00
 	int q1 = ((20 - 8) * 60 - 5) / 10;
-	// максимальное число в очереди 2 с 8.05 по 20.00
+	// РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ С‡РёСЃР»Рѕ РІ РѕС‡РµСЂРµРґРё 2 СЃ 8.05 РїРѕ 20.00
 	int q2 = (20 - 8) * 6;
 	int maxQueueLength = q1 + q2;
 	std::vector<int> queueTime;
@@ -41,12 +41,12 @@ int main()
 	if (n > maxQueueLength)
 		std::cout << "NO";
 	else
-		//Вывести часы, минуты
+		//Р’С‹РІРµСЃС‚Рё С‡Р°СЃС‹, РјРёРЅСѓС‚С‹
 		std::cout << queueTime[n - 1] / 60 << " " << queueTime[n - 1] % 60;
 	//system("pause");
 	return 0;
 }
-// и это тоже не работает
+// Рё СЌС‚Рѕ С‚РѕР¶Рµ РЅРµ СЂР°Р±РѕС‚Р°РµС‚
 #include <iostream>     // std::cout
 #include <vector>       // std::vector
  

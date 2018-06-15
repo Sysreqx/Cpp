@@ -1,4 +1,4 @@
-#include "Stack.h"
+п»ї#include "Stack.h"
 
 void Stack::stack_push_back(const int & value)
 {
@@ -36,6 +36,6 @@ bool Stack::empty() const
 void Stack::print_stack()
 {
 	cout << "Stack: ";
-	copy(stack.begin(), stack.end(), ostream_iterator<int>(cout, " ")); // вывод на экран элементов списка
-	cout << "\nПоследний элемент списка: " << stack.back();
+	copy(stack.begin(), stack.end(), ostream_iterator<int>(cout, " ")); // РІС‹РІРѕРґ РЅР° СЌРєСЂР°РЅ СЌР»РµРјРµРЅС‚РѕРІ СЃРїРёСЃРєР°
+	cout << "\nРџРѕСЃР»РµРґРЅРёР№ СЌР»РµРјРµРЅС‚ СЃРїРёСЃРєР°: " << stack.back();
 }

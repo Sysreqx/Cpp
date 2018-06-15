@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 using namespace std;
 
 void FillArray(int* const arr, const int size)
@@ -18,7 +18,7 @@ void ShowArray(const int* const arr, const int size)
 	cout << endl;
 }
 
-// int *&arr --- подменить адресс
+// int *&arr --- РїРѕРґРјРµРЅРёС‚СЊ Р°РґСЂРµСЃСЃ
 void push_back(int *&arr, int &size, const int value)
 {
 	int *newArr = new int [size + 1];

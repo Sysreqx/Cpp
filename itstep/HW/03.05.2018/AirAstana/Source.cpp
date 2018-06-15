@@ -1,22 +1,22 @@
-#include "AirAstana.h"
+п»ї#include "AirAstana.h"
 #include <iostream>
 #include <string>
 #include <ctime>
 #include <cstdlib> //atoi
 
-//случайный день
+//СЃР»СѓС‡Р°Р№РЅС‹Р№ РґРµРЅСЊ
 std::string randDay();
-//город
+//РіРѕСЂРѕРґ
 std::string randCity();
-//Тип рейса
+//РўРёРї СЂРµР№СЃР°
 std::string randTypeOfAircraft();
-//номер рейса
+//РЅРѕРјРµСЂ СЂРµР№СЃР°
 int randFlightNum();
-//Час
+//Р§Р°СЃ
 int randHour();
-//Минута
+//РњРёРЅСѓС‚Р°
 int randMin();
-//инт в стринг
+//РёРЅС‚ РІ СЃС‚СЂРёРЅРі
 std::string HToStr(int h);
 
 
@@ -35,7 +35,7 @@ int main()
 	AirAstana a10(randCity(), randTypeOfAircraft(), randHour(), randMin(), randDay(), randFlightNum());
 	std::vector<AirAstana> AA = { a1 , a2 , a3 , a4 , a5 , a6 , a7 , a8 , a9 , a10 };
 
-	//список рейсов для заданного пункта назначения;
+	//СЃРїРёСЃРѕРє СЂРµР№СЃРѕРІ РґР»СЏ Р·Р°РґР°РЅРЅРѕРіРѕ РїСѓРЅРєС‚Р° РЅР°Р·РЅР°С‡РµРЅРёСЏ;
 	std::string des;
 	des = randCity();
 	std::cout << des << ": ";
@@ -46,7 +46,7 @@ int main()
 	}
 	std::cout << "\n-----------------------\n";
 
-	//список рейсов для заданного дня недели;
+	//СЃРїРёСЃРѕРє СЂРµР№СЃРѕРІ РґР»СЏ Р·Р°РґР°РЅРЅРѕРіРѕ РґРЅСЏ РЅРµРґРµР»Рё;
 	std::string week;
 	week = randDay();
 	std::cout << week << ": ";
@@ -57,7 +57,7 @@ int main()
 	}
 	std::cout << "\n-----------------------\n";
 
-	//список рейсов для заданного дня недели, время вылета для которых больше заданного.
+	//СЃРїРёСЃРѕРє СЂРµР№СЃРѕРІ РґР»СЏ Р·Р°РґР°РЅРЅРѕРіРѕ РґРЅСЏ РЅРµРґРµР»Рё, РІСЂРµРјСЏ РІС‹Р»РµС‚Р° РґР»СЏ РєРѕС‚РѕСЂС‹С… Р±РѕР»СЊС€Рµ Р·Р°РґР°РЅРЅРѕРіРѕ.
 	int h = randHour();
 	week = randDay();
 	std::cout << week << " , hour more than " << h << ": ";

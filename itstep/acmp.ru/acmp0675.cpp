@@ -1,11 +1,11 @@
-#include <iostream>
+﻿#include <iostream>
 #include <vector>
 
-//Сдвигать одну делать к другой, если есть свободное место
+//РЎРґРІРёРіР°С‚СЊ РѕРґРЅСѓ РґРµР»Р°С‚СЊ Рє РґСЂСѓРіРѕР№, РµСЃР»Рё РµСЃС‚СЊ СЃРІРѕР±РѕРґРЅРѕРµ РјРµСЃС‚Рѕ
 bool checkFreeSpace(std::vector<std::vector<char>>& v, int n, int & m);
-//Расспечатать вектор
+//Р Р°СЃСЃРїРµС‡Р°С‚Р°С‚СЊ РІРµРєС‚РѕСЂ
 void PrintVector(std::vector<std::vector<char>>& v, int n, int m);
-//Заполнить вектор
+//Р—Р°РїРѕР»РЅРёС‚СЊ РІРµРєС‚РѕСЂ
 void FillVector(std::vector<std::vector<char>>& v, int n, int m);
 
 int main()

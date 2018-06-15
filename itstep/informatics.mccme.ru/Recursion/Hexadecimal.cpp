@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 using namespace std;
 void Hexadecimal(int n) {
 	if (n == 0)

@@ -1,4 +1,4 @@
-#include "JetSki.h"
+﻿#include "JetSki.h"
 
 JetSki::JetSki(std::string color, std::string model, int max_speed, int number_of_seats, int oarsN, bool hydrojet) : WaterVehicle(color, model, max_speed, number_of_seats, oarsN)
 {

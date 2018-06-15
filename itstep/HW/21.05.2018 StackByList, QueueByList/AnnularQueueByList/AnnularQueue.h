@@ -1,6 +1,6 @@
-#pragma once
+п»ї#pragma once
 #include "Queue.h"
-#include <iterator> // заголовок итераторов
+#include <iterator> // Р·Р°РіРѕР»РѕРІРѕРє РёС‚РµСЂР°С‚РѕСЂРѕРІ
 class AnnularQueue
 {
 private:

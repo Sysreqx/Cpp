@@ -1,4 +1,4 @@
-#include "saler.h"
+ï»¿#include "saler.h"
 
 saler::saler(string name, date_ bdate, bool gender, int exp, int cntSales)
 	: employee(name, bdate, gender, exp)
@@ -26,5 +26,5 @@ int saler::getCntSales() const
 void saler::info() const
 {
 	this->employee::info();
-	cout << "\nÊîë-âî ïðîäàæ: " << cntSales;
+	cout << "\nÐšÐ¾Ð»-Ð²Ð¾ Ð¿Ñ€Ð¾Ð´Ð°Ð¶: " << cntSales;
 }

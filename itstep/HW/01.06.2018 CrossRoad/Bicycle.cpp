@@ -1,13 +1,13 @@
-#include "Bicycle.h"
+п»ї#include "Bicycle.h"
 
 void Bicycle::stop()
 {
-	std::cout << "Велосипед остановился";
+	std::cout << "Р’РµР»РѕСЃРёРїРµРґ РѕСЃС‚Р°РЅРѕРІРёР»СЃСЏ";
 }
 
 void Bicycle::start()
 {
-	std::cout << "Велосипед поехал";
+	std::cout << "Р’РµР»РѕСЃРёРїРµРґ РїРѕРµС…Р°Р»";
 }
 
 Bicycle::Bicycle(std::string color, std::string model, int max_speed, int number_of_seats, int engine_power, std::string typeOfSeat) : GroundVehicle(color, model, max_speed, number_of_seats, engine_power)

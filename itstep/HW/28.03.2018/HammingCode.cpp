@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <string>
 #include <cmath>
 #include <locale>
@@ -30,7 +30,7 @@ int main()
 	std:: message_bin[message.length()], message_hex[message.length() / 2];
 	for (int i = 0; i < message.length(); i++)
 	{
-		//строку в бинарное число
+		//СЃС‚СЂРѕРєСѓ РІ Р±РёРЅР°СЂРЅРѕРµ С‡РёСЃР»Рѕ
 		std::string temp = (toBinary((int)message[i]));
 		std::cout << temp<< std::endl;
 		message_bin[i] = temp;
@@ -44,7 +44,7 @@ int main()
 	}
 	std::cout << std::endl;
 
-	//позиции 1, 2, 4, 8, 16
+	//РїРѕР·РёС†РёРё 1, 2, 4, 8, 16
 	message_hex.insert(0,  "0");
 	message_hex.insert(1,  "0");
 	message_hex.insert(3,  "0");

@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 using namespace std;
 int max = 0,m2 = 0;
 int Seq2m()

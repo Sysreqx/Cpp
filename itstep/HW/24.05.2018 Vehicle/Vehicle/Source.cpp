@@ -1,4 +1,4 @@
-#include "Tank.h"
+﻿#include "Tank.h"
 #include "Boat.h"
 #include "JetSki.h"
 #include "Bicycle.h"
@@ -8,7 +8,7 @@
 
 void main()
 {
-	WaterVehicle w("White", "Sail�driven", 15, 100, 0);
+	WaterVehicle w("White", "Sail–driven", 15, 100, 0);
 	w.info();
 	std::cout << std::endl;
 	Boat b("White", "Oaks-driven", 4, 100, 2, "Wood");

@@ -1,4 +1,4 @@
-//Шаблоны функций. Шаблонные функции c++. template typename. template class. Урок #41
+﻿//РЁР°Р±Р»РѕРЅС‹ С„СѓРЅРєС†РёР№. РЁР°Р±Р»РѕРЅРЅС‹Рµ С„СѓРЅРєС†РёРё c++. template typename. template class. РЈСЂРѕРє #41
 #include <iostream>
 using namespace std;
 template <typename T1, typename T2>

@@ -1,14 +1,14 @@
-#include "Bus.h"
+ï»¿#include "Bus.h"
 
 
 void Bus::stop()
 {
-	std::cout << "Àâòîáóñ îñòàíîâèëñÿ";
+	std::cout << "ÐÐ²Ñ‚Ð¾Ð±ÑƒÑ Ð¾ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ð»ÑÑ";
 }
 
 void Bus::start()
 {
-	std::cout << "Àâòîáóñ ïîåõàë";
+	std::cout << "ÐÐ²Ñ‚Ð¾Ð±ÑƒÑ Ð¿Ð¾ÐµÑ…Ð°Ð»";
 }
 
 Bus::Bus(std::string color, std::string model, int max_speed, int number_of_seats, int engine_power, int numberOfDeck) : GroundVehicle(color, model, max_speed, number_of_seats, engine_power)

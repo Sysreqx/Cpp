@@ -1,8 +1,8 @@
-#include <iostream>
+﻿#include <iostream>
 #include <string>
 using namespace std;
 
-// тернарный оператор
+// С‚РµСЂРЅР°СЂРЅС‹Р№ РѕРїРµСЂР°С‚РѕСЂ
 
 int main()
 {

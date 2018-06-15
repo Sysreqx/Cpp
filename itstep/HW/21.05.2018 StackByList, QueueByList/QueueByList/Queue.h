@@ -1,7 +1,7 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include <list>
-#include <iterator> // заголовок итераторов
+#include <iterator> // Р·Р°РіРѕР»РѕРІРѕРє РёС‚РµСЂР°С‚РѕСЂРѕРІ
 using namespace std;
 
 class Queue

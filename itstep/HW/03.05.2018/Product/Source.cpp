@@ -1,4 +1,4 @@
-#include "Product.h"
+п»ї#include "Product.h"
 #include <ctime>
 
 std::string rProductName();
@@ -23,7 +23,7 @@ int main()
 	Product p9(rProductName(), rManufacturer(), rY(), rM(), rD(), rPrice());
 	Product p10(rProductName(), rManufacturer(), rY(), rM(), rD(), rPrice());
 	std::vector<Product> p = { p1, p2, p3, p4, p5, p6, p7, p8, p9, p10 };
-	//a) список товаров для заданного наименования;
+	//a) СЃРїРёСЃРѕРє С‚РѕРІР°СЂРѕРІ РґР»СЏ Р·Р°РґР°РЅРЅРѕРіРѕ РЅР°РёРјРµРЅРѕРІР°РЅРёСЏ;
 	std::string PN = rProductName();
 	std::cout << PN << std::endl;
 	for (int i = 0; i < p.size(); i++)
@@ -34,7 +34,7 @@ int main()
 		}
 	}
 	std::cout << "\n--------------------------\n";
-	//b) список товаров для заданного наименования, цена которых не превосходит заданную;
+	//b) СЃРїРёСЃРѕРє С‚РѕРІР°СЂРѕРІ РґР»СЏ Р·Р°РґР°РЅРЅРѕРіРѕ РЅР°РёРјРµРЅРѕРІР°РЅРёСЏ, С†РµРЅР° РєРѕС‚РѕСЂС‹С… РЅРµ РїСЂРµРІРѕСЃС…РѕРґРёС‚ Р·Р°РґР°РЅРЅСѓСЋ;
 	PN = rProductName();
 	int curPrice = rPrice();
 	std::cout << PN << std::endl;
@@ -46,7 +46,7 @@ int main()
 		}
 	}
 	std::cout << "\n--------------------------\n";
-	//c) список товаров, срок хранения которых больше заданного.
+	//c) СЃРїРёСЃРѕРє С‚РѕРІР°СЂРѕРІ, СЃСЂРѕРє С…СЂР°РЅРµРЅРёСЏ РєРѕС‚РѕСЂС‹С… Р±РѕР»СЊС€Рµ Р·Р°РґР°РЅРЅРѕРіРѕ.
 	std::string SL = rShelfLife();
 	std::cout << SL << std::endl;
 	for (int i = 0; i < p.size(); i++)

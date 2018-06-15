@@ -1,4 +1,4 @@
-#include "employee.h"
+ï»¿#include "employee.h"
 
 employee::employee(string name, date_ bdate, bool gender,  int exp)
 :human(name,bdate, gender)
@@ -19,7 +19,7 @@ int employee::getExp() const
 void employee::info() const
 {
 	human::info();
-	cout << "\nCòàæ :" << exp << " ëåò";
+	cout << "\nCÑ‚Ð°Ð¶ :" << exp << " Ð»ÐµÑ‚";
 }
 
 double employee::getCoef() const 

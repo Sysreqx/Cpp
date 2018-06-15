@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 
 int main() {
 	int n, sum = 0;

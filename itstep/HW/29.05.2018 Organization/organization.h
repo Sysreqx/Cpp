@@ -1,10 +1,10 @@
-#pragma once
+п»ї#pragma once
 #include "employee.h"
 #include <vector>
 #include <string>
 #include <memory>
 using namespace std;/*
-Добавить возможноть увольнения работников, подсчет потребности в зарплате, изменение информации по работнику, Нарисовать интерфейс*/
+Р”РѕР±Р°РІРёС‚СЊ РІРѕР·РјРѕР¶РЅРѕС‚СЊ СѓРІРѕР»СЊРЅРµРЅРёСЏ СЂР°Р±РѕС‚РЅРёРєРѕРІ, РїРѕРґСЃС‡РµС‚ РїРѕС‚СЂРµР±РЅРѕСЃС‚Рё РІ Р·Р°СЂРїР»Р°С‚Рµ, РёР·РјРµРЅРµРЅРёРµ РёРЅС„РѕСЂРјР°С†РёРё РїРѕ СЂР°Р±РѕС‚РЅРёРєСѓ, РќР°СЂРёСЃРѕРІР°С‚СЊ РёРЅС‚РµСЂС„РµР№СЃ*/
 
 class organization {
 public:
@@ -41,7 +41,7 @@ public:
 		if (position < emps.size())
 			emps[position]->setGender(gender);
 	}
-	// Потребность в зарплате.
+	// РџРѕС‚СЂРµР±РЅРѕСЃС‚СЊ РІ Р·Р°СЂРїР»Р°С‚Рµ.
 	double allSalary() const {
 		double c = 0.0;
 		for (int i = 0; i < emps.size(); i++)
@@ -51,14 +51,14 @@ public:
 		return c;
 	}
 	void getInfo()const {
-		cout << "Наименование организации: " << name << "\n----------\n";
+		cout << "РќР°РёРјРµРЅРѕРІР°РЅРёРµ РѕСЂРіР°РЅРёР·Р°С†РёРё: " << name << "\n----------\n";
 		for (size_t i = 0; i < emps.size(); i++)
 		{
 			string res = typeid(*emps[i]).name();
 			cout << res.substr(6) << endl;
 			emps[i]->info();
-			cout << "\nзарплата:" << emps[i]->getCoef()*salary
-				<< " тенге\n------\n";
+			cout << "\nР·Р°СЂРїР»Р°С‚Р°:" << emps[i]->getCoef()*salary
+				<< " С‚РµРЅРіРµ\n------\n";
 		}
 	}
 

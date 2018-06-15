@@ -1,10 +1,10 @@
-#pragma once
+п»ї#pragma once
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <string>
 //
-//*2.	Написать класс «Студент».
-//Важно, чтобы строка с именем студента хранилась в динамической памяти.
+//*2.	РќР°РїРёСЃР°С‚СЊ РєР»Р°СЃСЃ В«РЎС‚СѓРґРµРЅС‚В».
+//Р’Р°Р¶РЅРѕ, С‡С‚РѕР±С‹ СЃС‚СЂРѕРєР° СЃ РёРјРµРЅРµРј СЃС‚СѓРґРµРЅС‚Р° С…СЂР°РЅРёР»Р°СЃСЊ РІ РґРёРЅР°РјРёС‡РµСЃРєРѕР№ РїР°РјСЏС‚Рё.
 
 class Student
 {
@@ -17,7 +17,7 @@ private:
 	int phone;
 public:
 	//setters
-	//динамическая память - имя
+	//РґРёРЅР°РјРёС‡РµСЃРєР°СЏ РїР°РјСЏС‚СЊ - РёРјСЏ
 	void setFName(const char * _fName);
 	void setSName(std::string s);
 	void setMName(std::string s);
@@ -25,7 +25,7 @@ public:
 	void setDateOfBirth(std::string s);
 	void setPhone(int s);
 	//getters
-	//динамическая память - имя
+	//РґРёРЅР°РјРёС‡РµСЃРєР°СЏ РїР°РјСЏС‚СЊ - РёРјСЏ
 	char* getFName();
 	std::string getSName();
 	std::string getMName();

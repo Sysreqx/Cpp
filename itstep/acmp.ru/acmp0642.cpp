@@ -1,12 +1,12 @@
-#include <iostream>     // std::cout
+﻿#include <iostream>     // std::cout
 #include <algorithm>    // std::sort
 #include <vector>       // std::vector
 
-//Расспечатать вектор
+//Р Р°СЃСЃРїРµС‡Р°С‚Р°С‚СЊ РІРµРєС‚РѕСЂ
 void PrintVector(std::vector<std::vector<char>>& v, int n, int m);
-//Заполнить двумерный вектор
+//Р—Р°РїРѕР»РЅРёС‚СЊ РґРІСѓРјРµСЂРЅС‹Р№ РІРµРєС‚РѕСЂ
 void FillVector(std::vector<std::vector<char>>& v, int n, int m);
-//Заполнить вектор
+//Р—Р°РїРѕР»РЅРёС‚СЊ РІРµРєС‚РѕСЂ
 void FillVector(std::vector<int>& v, int n);
 
 int main()

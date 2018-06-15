@@ -1,4 +1,4 @@
-#include "organization.h"
+﻿#include "organization.h"
 
 void organization::setSalary(double salary)
 {

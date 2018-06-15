@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
     using namespace std;
     long long fBinToDec(long long n, long long m = 1, long long d = 0)
     {

@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <string>
 #include <vector>
 #include <memory>
@@ -27,17 +27,17 @@ void chngEmployeTBD(organization& itstep);
 int main()
 {
 	setlocale(0, "");
-	organization itstep("Академия Шаг", 100000);
+	organization itstep("РђРєР°РґРµРјРёСЏ РЁР°Рі", 100000);
 
 	/*
-	itstep.addEmployee(new admin("Вася", date_(5, 8, 1996), 1, 2, 3));
-	itstep.addEmployee(new saler("Катя", date_(1, 1, 1990), 0, 3, 300));
-	itstep.addEmployee(new anykey("Леха"));
+	itstep.addEmployee(new admin("Р’Р°СЃСЏ", date_(5, 8, 1996), 1, 2, 3));
+	itstep.addEmployee(new saler("РљР°С‚СЏ", date_(1, 1, 1990), 0, 3, 300));
+	itstep.addEmployee(new anykey("Р›РµС…Р°"));
 	itstep.deleteEmployee(3);
 	itstep.getInfo();
 	itstep.changeEmployeeExp(2, 10);
 	itstep.changeEmployeeGender(2, false);
-	itstep.changeEmployeeName(2, "Махрипуш");
+	itstep.changeEmployeeName(2, "РњР°С…СЂРёРїСѓС€");
 	itstep.changeEmployeeTBD(2, 2, 2, 2030);
 	itstep.getInfo();*/
 	Interface(itstep);
@@ -47,18 +47,18 @@ int main()
 
 void Interface(organization& itstep)
 {
-	cout << "Выберите действие: " << endl;
-	cout << "\t1. Добавить админа" << endl;
-	cout << "\t2. Добавить разработчика" << endl;
-	cout << "\t3. Добавить продавца" << endl;
-	cout << "\t4. Добавить аникейшика" << endl;
-	cout << "\t5. Удалить работника" << endl;
-	cout << "\t6. Получить информацию по организации" << endl;
-	cout << "\t7.  Сколько должна выплатить организация" << endl;
-	cout << "\t8.  Изменить опыт работы работника" << endl;
-	cout << "\t9.  Изменить пол работника" << endl;
-	cout << "\t10. Изменить имя работника" << endl;
-	cout << "\t11. Изменить дату рождения работника" << endl;
+	cout << "Р’С‹Р±РµСЂРёС‚Рµ РґРµР№СЃС‚РІРёРµ: " << endl;
+	cout << "\t1. Р”РѕР±Р°РІРёС‚СЊ Р°РґРјРёРЅР°" << endl;
+	cout << "\t2. Р”РѕР±Р°РІРёС‚СЊ СЂР°Р·СЂР°Р±РѕС‚С‡РёРєР°" << endl;
+	cout << "\t3. Р”РѕР±Р°РІРёС‚СЊ РїСЂРѕРґР°РІС†Р°" << endl;
+	cout << "\t4. Р”РѕР±Р°РІРёС‚СЊ Р°РЅРёРєРµР№С€РёРєР°" << endl;
+	cout << "\t5. РЈРґР°Р»РёС‚СЊ СЂР°Р±РѕС‚РЅРёРєР°" << endl;
+	cout << "\t6. РџРѕР»СѓС‡РёС‚СЊ РёРЅС„РѕСЂРјР°С†РёСЋ РїРѕ РѕСЂРіР°РЅРёР·Р°С†РёРё" << endl;
+	cout << "\t7.  РЎРєРѕР»СЊРєРѕ РґРѕР»Р¶РЅР° РІС‹РїР»Р°С‚РёС‚СЊ РѕСЂРіР°РЅРёР·Р°С†РёСЏ" << endl;
+	cout << "\t8.  РР·РјРµРЅРёС‚СЊ РѕРїС‹С‚ СЂР°Р±РѕС‚С‹ СЂР°Р±РѕС‚РЅРёРєР°" << endl;
+	cout << "\t9.  РР·РјРµРЅРёС‚СЊ РїРѕР» СЂР°Р±РѕС‚РЅРёРєР°" << endl;
+	cout << "\t10. РР·РјРµРЅРёС‚СЊ РёРјСЏ СЂР°Р±РѕС‚РЅРёРєР°" << endl;
+	cout << "\t11. РР·РјРµРЅРёС‚СЊ РґР°С‚Сѓ СЂРѕР¶РґРµРЅРёСЏ СЂР°Р±РѕС‚РЅРёРєР°" << endl;
 	int choise = 0;
 	cin >> choise;
 	if (choise == 1)
@@ -89,19 +89,19 @@ void Interface(organization& itstep)
 void addAdmin(organization& itstep)
 {
 	system("cls");
-	cout << "Введите имя администарота" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ РёРјСЏ Р°РґРјРёРЅРёСЃС‚Р°СЂРѕС‚Р°" << endl;
 	string name;
 	cin >> name;
-	cout << "Введите дату рождения через пробел, начинается со дня" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ РґР°С‚Сѓ СЂРѕР¶РґРµРЅРёСЏ С‡РµСЂРµР· РїСЂРѕР±РµР», РЅР°С‡РёРЅР°РµС‚СЃСЏ СЃРѕ РґРЅСЏ" << endl;
 	int day, month, year;
 	cin >> day >> month >> year;
-	cout << "Введите пол, true - мужской, false - женский" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ РїРѕР», true - РјСѓР¶СЃРєРѕР№, false - Р¶РµРЅСЃРєРёР№" << endl;
 	bool gender;
 	cin >> gender;
-	cout << "Введите опыт работы" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ РѕРїС‹С‚ СЂР°Р±РѕС‚С‹" << endl;
 	int exp;
 	cin >> exp;
-	cout << "Введите количество обслуживаемых ПК" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ РѕР±СЃР»СѓР¶РёРІР°РµРјС‹С… РџРљ" << endl;
 	int pc;
 	cin >> pc;
 	itstep.addEmployee(new admin(name, date_(day, month, year), gender, exp, pc));
@@ -112,19 +112,19 @@ void addAdmin(organization& itstep)
 void addDeveloper(organization& itstep)
 {
 	system("cls");
-	cout << "Введите имя разработчика" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ РёРјСЏ СЂР°Р·СЂР°Р±РѕС‚С‡РёРєР°" << endl;
 	string name;
 	cin >> name;
-	cout << "Введите дату рождения через пробел, начинается со дня" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ РґР°С‚Сѓ СЂРѕР¶РґРµРЅРёСЏ С‡РµСЂРµР· РїСЂРѕР±РµР», РЅР°С‡РёРЅР°РµС‚СЃСЏ СЃРѕ РґРЅСЏ" << endl;
 	int day, month, year;
 	cin >> day >> month >> year;
-	cout << "Введите пол, true - мужской, false - женский" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ РїРѕР», true - РјСѓР¶СЃРєРѕР№, false - Р¶РµРЅСЃРєРёР№" << endl;
 	bool gender;
 	cin >> gender;
-	cout << "Введите опыт работы" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ РѕРїС‹С‚ СЂР°Р±РѕС‚С‹" << endl;
 	int exp;
 	cin >> exp;
-	cout << "Знание языков(количество)" << endl;
+	cout << "Р—РЅР°РЅРёРµ СЏР·С‹РєРѕРІ(РєРѕР»РёС‡РµСЃС‚РІРѕ)" << endl;
 	int lc;
 	cin >> lc;
 	itstep.addEmployee(new developer(name, date_(day, month, year), gender, exp, lc));
@@ -135,19 +135,19 @@ void addDeveloper(organization& itstep)
 void addSaler(organization& itstep)
 {
 	system("cls");
-	cout << "Введите имя продавца" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ РёРјСЏ РїСЂРѕРґР°РІС†Р°" << endl;
 	string name;
 	cin >> name;
-	cout << "Введите дату рождения через пробел, начинается со дня" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ РґР°С‚Сѓ СЂРѕР¶РґРµРЅРёСЏ С‡РµСЂРµР· РїСЂРѕР±РµР», РЅР°С‡РёРЅР°РµС‚СЃСЏ СЃРѕ РґРЅСЏ" << endl;
 	int day, month, year;
 	cin >> day >> month >> year;
-	cout << "Введите пол, true - мужской, false - женский" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ РїРѕР», true - РјСѓР¶СЃРєРѕР№, false - Р¶РµРЅСЃРєРёР№" << endl;
 	bool gender;
 	cin >> gender;
-	cout << "Введите опыт работы" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ РѕРїС‹С‚ СЂР°Р±РѕС‚С‹" << endl;
 	int exp;
 	cin >> exp;
-	cout << "Введите количество продаж" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ РїСЂРѕРґР°Р¶" << endl;
 	int cs;
 	cin >> cs;
 	itstep.addEmployee(new saler(name, date_(day, month, year), gender, exp, cs));
@@ -158,13 +158,13 @@ void addSaler(organization& itstep)
 void addAnykey(organization& itstep)
 {
 	system("cls");
-	cout << "Введите имя аникейшика" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ РёРјСЏ Р°РЅРёРєРµР№С€РёРєР°" << endl;
 	string name;
 	cin >> name;
-	cout << "Введите дату рождения через пробел, начинается со дня" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ РґР°С‚Сѓ СЂРѕР¶РґРµРЅРёСЏ С‡РµСЂРµР· РїСЂРѕР±РµР», РЅР°С‡РёРЅР°РµС‚СЃСЏ СЃРѕ РґРЅСЏ" << endl;
 	int day, month, year;
 	cin >> day >> month >> year;
-	cout << "Введите пол, true - мужской, false - женский" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ РїРѕР», true - РјСѓР¶СЃРєРѕР№, false - Р¶РµРЅСЃРєРёР№" << endl;
 	bool gender;
 	cin >> gender;
 	itstep.addEmployee(new anykey(name, date_(day, month, year), gender));
@@ -181,7 +181,7 @@ void getInfoo(organization & itstep)
 void deleteEmployeeG(organization & itstep)
 {
 	system("cls");
-	cout << "Введите позицию" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ РїРѕР·РёС†РёСЋ" << endl;
 	int position;
 	cin >> position;
 	itstep.deleteEmployee(position);
@@ -198,7 +198,7 @@ void howMuchMoney(organization & itstep)
 
 void chngEmployeExp(organization& itstep) {
 	system("cls");
-	cout << "Введите позицию" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ РїРѕР·РёС†РёСЋ" << endl;
 	int position;
 	cin >> position;
 	int exp;
@@ -210,7 +210,7 @@ void chngEmployeExp(organization& itstep) {
 
 void chngEmployeGender(organization& itstep) {
 	system("cls");
-	cout << "Введите позицию" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ РїРѕР·РёС†РёСЋ" << endl;
 	int position;
 	cin >> position;
 	bool gender;
@@ -222,10 +222,10 @@ void chngEmployeGender(organization& itstep) {
 
 void chngEmployeName(organization& itstep) {
 	system("cls");
-	cout << "Введите позицию" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ РїРѕР·РёС†РёСЋ" << endl;
 	int position;
 	cin >> position;
-	cout << "Введите имя" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ РёРјСЏ" << endl;
 	string name;
 	cin >> name;
 	itstep.changeEmployeeName(position, name);
@@ -235,10 +235,10 @@ void chngEmployeName(organization& itstep) {
 
 void chngEmployeTBD(organization& itstep) {
 	system("cls");
-	cout << "Введите позицию" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ РїРѕР·РёС†РёСЋ" << endl;
 	int position;
 	cin >> position;
-	cout << "Введите дату рождения" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ РґР°С‚Сѓ СЂРѕР¶РґРµРЅРёСЏ" << endl;
 	int day, month, year;
 	cin >> day >> month >> year;
 	itstep.changeEmployeeTBD(position, day, month, year);

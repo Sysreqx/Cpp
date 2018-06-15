@@ -1,4 +1,4 @@
-#include "Bicycle.h"
+﻿#include "Bicycle.h"
 
 Bicycle::Bicycle(std::string color, std::string model, int max_speed, int number_of_seats, int engine_power, std::string typeOfSeat) : GroundVehicle(color, model, max_speed, number_of_seats, engine_power)
 {

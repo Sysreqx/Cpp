@@ -1,4 +1,4 @@
-#include "Worker.h"
+п»ї#include "Worker.h"
 #include <ctime>
 
 std::string rName();
@@ -20,7 +20,7 @@ int main()
 	Worker w8(rName(), rPosition(), rYear(), rSalary());
 	Worker w9(rName(), rPosition(), rYear(), rSalary());
 	std::vector<Worker> w = {w1, w2, w3, w4, w5, w6, w7, w8, w9};
-	//список работников, стаж работы которых на данном предприятии превосходит заданное число лет;
+	//СЃРїРёСЃРѕРє СЂР°Р±РѕС‚РЅРёРєРѕРІ, СЃС‚Р°Р¶ СЂР°Р±РѕС‚С‹ РєРѕС‚РѕСЂС‹С… РЅР° РґР°РЅРЅРѕРј РїСЂРµРґРїСЂРёСЏС‚РёРё РїСЂРµРІРѕСЃС…РѕРґРёС‚ Р·Р°РґР°РЅРЅРѕРµ С‡РёСЃР»Рѕ Р»РµС‚;
 	//randomnoe chislo
 	int rY = rYear() - 1950;
 	std::cout << std::to_string(rY) << ": \n";
@@ -29,7 +29,7 @@ int main()
 		if (2018 - w[i].getYear() > rY)
 			std::cout << "\t" << w[i].getName() << " " << w[i].getYear() << std::endl;
 	}
-	//список работников, зарплата которых превосходит заданную;
+	//СЃРїРёСЃРѕРє СЂР°Р±РѕС‚РЅРёРєРѕРІ, Р·Р°СЂРїР»Р°С‚Р° РєРѕС‚РѕСЂС‹С… РїСЂРµРІРѕСЃС…РѕРґРёС‚ Р·Р°РґР°РЅРЅСѓСЋ;
 	int rS = rSalary();
 	std::cout << std::to_string(rS) << ": \n";
 	for (int i = 0; i < w.size(); i++)
@@ -37,7 +37,7 @@ int main()
 		if (w[i].getSalary() > rS)
 			std::cout << "\t" << w[i].getName() << " " << w[i].getSalary() << std::endl;
 	}
-	//список работников, занимающих заданную должность.* /
+	//СЃРїРёСЃРѕРє СЂР°Р±РѕС‚РЅРёРєРѕРІ, Р·Р°РЅРёРјР°СЋС‰РёС… Р·Р°РґР°РЅРЅСѓСЋ РґРѕР»Р¶РЅРѕСЃС‚СЊ.* /
 	std::string Post = rPosition();
 	std::cout << Post << ": \n";
 	for (int i = 0; i < w.size(); i++)

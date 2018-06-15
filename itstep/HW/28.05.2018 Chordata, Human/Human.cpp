@@ -1,4 +1,4 @@
-#include "Human.h"
+ï»¿#include "Human.h"
 
 
 Human::Human(std::string color, std::string name, bool hasSkull, bool hasHomeothermy, bool Reason) : Homeothermy(color, name, hasSkull, hasHomeothermy)
@@ -8,7 +8,7 @@ Human::Human(std::string color, std::string name, bool hasSkull, bool hasHomeoth
 
 void Human::move() const
 {
-	std::cout << "Ëåâîé òóäîé, ïðàâîé ñþäîé";
+	std::cout << "Ð›ÐµÐ²Ð¾Ð¹ Ñ‚ÑƒÐ´Ð¾Ð¹, Ð¿Ñ€Ð°Ð²Ð¾Ð¹ ÑÑŽÐ´Ð¾Ð¹";
 }
 
 void Human::info() const

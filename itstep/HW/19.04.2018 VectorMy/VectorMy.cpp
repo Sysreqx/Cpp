@@ -1,4 +1,4 @@
-#include "VectorMy.h"
+п»ї#include "VectorMy.h"
 #include <vector>
 
 VectorMy::VectorMy()
@@ -45,7 +45,7 @@ void VectorMy::push_back(int num)
 
 void VectorMy::pop_back()
 {
-	//если нет элементов выходим из метода
+	//РµСЃР»Рё РЅРµС‚ СЌР»РµРјРµРЅС‚РѕРІ РІС‹С…РѕРґРёРј РёР· РјРµС‚РѕРґР°
 	if (size == 0) return;
 	
 	if (size == 1)
@@ -92,7 +92,7 @@ int VectorMy::getSize()
 	return this->size;
 }
 
-//создать массив, скопировать до элемента, вставить элементь, копировать дальше
+//СЃРѕР·РґР°С‚СЊ РјР°СЃСЃРёРІ, СЃРєРѕРїРёСЂРѕРІР°С‚СЊ РґРѕ СЌР»РµРјРµРЅС‚Р°, РІСЃС‚Р°РІРёС‚СЊ СЌР»РµРјРµРЅС‚СЊ, РєРѕРїРёСЂРѕРІР°С‚СЊ РґР°Р»СЊС€Рµ
 void VectorMy::insert(int position, int value)
 {
 	int *newArr;

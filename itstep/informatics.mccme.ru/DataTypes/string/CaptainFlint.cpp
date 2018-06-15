@@ -1,4 +1,4 @@
-#include <iostream>   // std::cout
+﻿#include <iostream>   // std::cout
 #include <string>     // std::string, std::stoi
 // #include <iomanip>
 // #include <io.h>       // _eof

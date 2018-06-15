@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <Windows.h>
 #include <conio.h>
 #include <algorithm> 
@@ -40,7 +40,7 @@ void drawEverything(Figure & f, Wall & w, Ground & g)
 {
 	for (byte i = 0; i < f.size; ++i)
 	{
-		// тут зарандомить фигуры
+		// С‚СѓС‚ Р·Р°СЂР°РЅРґРѕРјРёС‚СЊ С„РёРіСѓСЂС‹
 
 		// draw(f.body1[i], '#');
 		// draw(f.body2[i], '#');
@@ -52,7 +52,7 @@ void drawEverything(Figure & f, Wall & w, Ground & g)
 	}
 }
 void init(Figure & f, Wall & w, Ground & g) {
-	//сама фигура ####
+	//СЃР°РјР° С„РёРіСѓСЂР° ####
 	f.body1[0].x = 2;
 	f.body1[0].y = 1;
 	f.body1[1].x = 2;
@@ -63,7 +63,7 @@ void init(Figure & f, Wall & w, Ground & g) {
 	f.body1[3].y = 4;
 	// end ####
 
-		//сама фигура ##
+		//СЃР°РјР° С„РёРіСѓСЂР° ##
 	//						 ##
 	//
 	f.body2[0].x = 5;
@@ -77,7 +77,7 @@ void init(Figure & f, Wall & w, Ground & g) {
 	// end ##
 	//		##
 
-			//сама фигура #
+			//СЃР°РјР° С„РёРіСѓСЂР° #
 	//						   ###
 	//
 	f.body3[0].x = 5;

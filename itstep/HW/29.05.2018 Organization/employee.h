@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "human.h"
 class employee :
 	public human

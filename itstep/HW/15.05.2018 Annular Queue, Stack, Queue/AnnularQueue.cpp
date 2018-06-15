@@ -1,4 +1,4 @@
-#include "AnnularQueue.h"
+﻿#include "AnnularQueue.h"
 
 template<class T>
 inline void AnnularQueue<T>::push(T val)

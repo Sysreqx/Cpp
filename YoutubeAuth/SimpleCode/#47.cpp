@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <sstream>
 using namespace std;
 int main()
@@ -16,13 +16,13 @@ int main()
 
 	for (int i = 0; i < 5; ++i)
 	{
-		// Значение лежащее по адрессу
+		// Р—РЅР°С‡РµРЅРёРµ Р»РµР¶Р°С‰РµРµ РїРѕ Р°РґСЂРµСЃСЃСѓ
 		cout << *(parr + i) << " ";
 	}
 	cout << endl;
 	for (int i = 0; i < 5; ++i)
 	{
-		// Значение лежащее по адрессу
+		// Р—РЅР°С‡РµРЅРёРµ Р»РµР¶Р°С‰РµРµ РїРѕ Р°РґСЂРµСЃСЃСѓ
 		cout << *(arr + i) << " ";
 	}
 		cout << endl;

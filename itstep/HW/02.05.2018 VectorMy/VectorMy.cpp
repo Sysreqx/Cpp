@@ -1,4 +1,4 @@
-#include "VectorMy.h"
+п»ї#include "VectorMy.h"
 #include <vector>
 VectorMy::VectorMy()
 {
@@ -45,7 +45,7 @@ void VectorMy::push_back(int num)
 
 void VectorMy::pop_back()
 {
-	//если нету элементов выходим из метода
+	//РµСЃР»Рё РЅРµС‚Сѓ СЌР»РµРјРµРЅС‚РѕРІ РІС‹С…РѕРґРёРј РёР· РјРµС‚РѕРґР°
 	if (size == 0) return;
 
 	if (size == 1)

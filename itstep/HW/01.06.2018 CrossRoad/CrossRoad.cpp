@@ -1,4 +1,4 @@
-#include "CrossRoad.h"
+п»ї#include "CrossRoad.h"
 
 Vehicle * CrossRoad::randomVehicle()
 {
@@ -23,7 +23,7 @@ Vehicle * CrossRoad::randomVehicle()
 		v = new Tank(marks[randMarks], 80, 6, 1000);
 		break;
 	case 3:
-		v = new Bicycle(color[randColor], marks[randMarks], 200, 1, 0, "Жесткое");
+		v = new Bicycle(color[randColor], marks[randMarks], 200, 1, 0, "Р–РµСЃС‚РєРѕРµ");
 	}
 	return v;
 }
@@ -91,7 +91,7 @@ void CrossRoad::redLightOn()
 	{
 		ost += cntSec;
 		system("cls");
-		cout << "Красный - " << durationRed - i << " сек\n"
+		cout << "РљСЂР°СЃРЅС‹Р№ - " << durationRed - i << " СЃРµРє\n"
 			<< "-------------------\n";
 		while (ost >= 1)
 		{
@@ -125,7 +125,7 @@ void CrossRoad::greenLightOn()
 	for (int i = 0; i < durationGreen; i++)
 	{
 		system("cls");
-		cout << "Зеленый - " << durationGreen - i << " сек\n"
+		cout << "Р—РµР»РµРЅС‹Р№ - " << durationGreen - i << " СЃРµРє\n"
 			<< cntSec << "-------------------\n";
 		ost += cntSec;
 

@@ -1,4 +1,4 @@
-// Добавить перевод к английским словам
+﻿// Р”РѕР±Р°РІРёС‚СЊ РїРµСЂРµРІРѕРґ Рє Р°РЅРіР»РёР№СЃРєРёРј СЃР»РѕРІР°Рј
 
 #include <iostream>
 #include <fstream> //ifstream ofstream
@@ -8,7 +8,7 @@
 #include <vector>
 // #include <iomanip> // hz why
 using namespace std;
-#include "path.cpp" // подтянуть переменные
+#include "path.cpp" // РїРѕРґС‚СЏРЅСѓС‚СЊ РїРµСЂРµРјРµРЅРЅС‹Рµ
 
 int main()
 {
@@ -16,18 +16,18 @@ int main()
 	ifstream f2;
 	ofstream fout;
 
-	//Открыть файл который нужно отредактировать
+	//РћС‚РєСЂС‹С‚СЊ С„Р°Р№Р» РєРѕС‚РѕСЂС‹Р№ РЅСѓР¶РЅРѕ РѕС‚СЂРµРґР°РєС‚РёСЂРѕРІР°С‚СЊ
 	f1.open(f1_path4);
 	f2.open(f1_path4.substr(0, f1_path4.size() - 4) + ".en.ru.txt");
 	// f1.open("misfits3s2eOUT.txt");
-	//Создать выходной файл
+	//РЎРѕР·РґР°С‚СЊ РІС‹С…РѕРґРЅРѕР№ С„Р°Р№Р»
 	fout.open(f1_path4.substr(0, f1_path4.size() - 4) + "EnRu.txt");
 
 	string str_com_en_ru;
 	vector<string> vec_str_com_en_ru1;
 	vector<string> vec_str_com_en_ru2;
 
-	//английский
+	//Р°РЅРіР»РёР№СЃРєРёР№
 	while(!f1.eof())
 	{
 		getline(f1, str_com_en_ru);
@@ -35,7 +35,7 @@ int main()
 		vec_str_com_en_ru1.push_back("\n");
 	}
 
-	//русский
+	//СЂСѓСЃСЃРєРёР№
 	while(!f2.eof())
 	{
 		getline(f2, str_com_en_ru);

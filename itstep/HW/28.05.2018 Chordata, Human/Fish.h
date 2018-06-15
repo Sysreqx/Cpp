@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include "Chordata.h"
 class Fish :
 	public Chordata
@@ -10,9 +10,9 @@ public:
 	void move() const;
 	void info() const;
 private:
-	// Костные
+	// РљРѕСЃС‚РЅС‹Рµ
 	bool isOsteichthyes = true;
-	// Хрящевые
+	// РҐСЂСЏС‰РµРІС‹Рµ
 	bool isChondrichthyes = false;
 };
 

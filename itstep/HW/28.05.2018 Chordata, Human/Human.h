@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include "Homeothermy.h"
 class Human :
 	public Homeothermy
@@ -10,7 +10,7 @@ public:
 	bool hasReason() const;
 	void setReason(bool Reason);
 private:
-	// Разум
+	// Р Р°Р·СѓРј
 	bool Reason = true;
 };
 

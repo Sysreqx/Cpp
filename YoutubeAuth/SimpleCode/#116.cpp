@@ -1,16 +1,16 @@
-#include <iostream>
+﻿#include <iostream>
 #include <string>
 #include <fstream>
 using namespace std;
 
-// чтение данных из файла
+// С‡С‚РµРЅРёРµ РґР°РЅРЅС‹С… РёР· С„Р°Р№Р»Р°
 
 
 int main()
 {
 	// path to file
 	string path = "myFile.txt";
-	// Чтение файла
+	// Р§С‚РµРЅРёРµ С„Р°Р№Р»Р°
 	ifstream fin;
 	fin.open(path);
 
@@ -23,16 +23,16 @@ int main()
 	{
 		//vvoditt dannye i srazu ih sohranjatt
 		cout << "File found" << endl;
-		//Посимвольно
+		//РџРѕСЃРёРјРІРѕР»СЊРЅРѕ
 		// fin.get();	
 		string str;
 		// char ch;
 		while (!fin.eof())
 		{
-			// Считывание до первого пробела
+			// РЎС‡РёС‚С‹РІР°РЅРёРµ РґРѕ РїРµСЂРІРѕРіРѕ РїСЂРѕР±РµР»Р°
 			// fin >> str;
 			str = "";
-			// Считывать построчно
+			// РЎС‡РёС‚С‹РІР°С‚СЊ РїРѕСЃС‚СЂРѕС‡РЅРѕ
 			getline(fin, str);
 			cout << str;
 		}

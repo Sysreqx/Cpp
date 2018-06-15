@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "employee.h"
 class developer :
 	public employee

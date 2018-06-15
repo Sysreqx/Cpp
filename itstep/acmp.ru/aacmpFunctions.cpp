@@ -1,9 +1,9 @@
-
-//заполнить вектор векторов
+﻿
+//Р·Р°РїРѕР»РЅРёС‚СЊ РІРµРєС‚РѕСЂ РІРµРєС‚РѕСЂРѕРІ
 template<class T>
 void fillVector(std::vector<std::vector<T>> &vectorIn, int n, int m);
 
-//Вывести вектор векторов.
+//Р’С‹РІРµСЃС‚Рё РІРµРєС‚РѕСЂ РІРµРєС‚РѕСЂРѕРІ.
 template<class T>
 void printVector(std::vector<std::vector<T>> const& vectorIn, int n, int m);
 

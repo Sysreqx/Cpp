@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include <string>
 #include "Chordata.h"
 class tetrapoda:public Chordata

@@ -1,4 +1,4 @@
-#include "Time.h"
+ï»¿#include "Time.h"
 
 void Time::setH(int h)
 {
@@ -231,11 +231,11 @@ ostream & operator<<(ostream & out, const Time & a)
 istream & operator >> (istream & in, Time &a)
 {
 	int h, m, s;
-	cout << "Ââåäèòå ÷àñû\n";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð°ÑÑ‹\n";
 	in >> h;
-	cout << "Ââåäèòå ìèíóòû\n";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð¸Ð½ÑƒÑ‚Ñ‹\n";
 	in >> m;
-	cout << "Ââåäèòå ñåêóíäû\n";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÐµÐºÑƒÐ½Ð´Ñ‹\n";
 	in >> s;
 	a.setH(h);
 	a.setM(m);

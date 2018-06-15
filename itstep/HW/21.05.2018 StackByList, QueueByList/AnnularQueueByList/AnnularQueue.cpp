@@ -1,4 +1,4 @@
-#include "AnnularQueue.h"
+п»ї#include "AnnularQueue.h"
 
 int & AnnularQueue::annular_queueu_by_list_back()
 {
@@ -54,9 +54,9 @@ void AnnularQueue::annular_queueu_by_list_step()
 
 void AnnularQueue::print_annular_queueu()
 {
-	cout << "Список: ";
-	copy(annular_queueu_by_list.begin(), annular_queueu_by_list.end(), ostream_iterator<int>(cout, " ")); // вывод на экран элементов списка
-	cout << "\nПервый элемент списка: " << annular_queueu_by_list.front();
-	cout << "\nПоследний элемент списка: " << annular_queueu_by_list.back();
+	cout << "РЎРїРёСЃРѕРє: ";
+	copy(annular_queueu_by_list.begin(), annular_queueu_by_list.end(), ostream_iterator<int>(cout, " ")); // РІС‹РІРѕРґ РЅР° СЌРєСЂР°РЅ СЌР»РµРјРµРЅС‚РѕРІ СЃРїРёСЃРєР°
+	cout << "\nРџРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚ СЃРїРёСЃРєР°: " << annular_queueu_by_list.front();
+	cout << "\nРџРѕСЃР»РµРґРЅРёР№ СЌР»РµРјРµРЅС‚ СЃРїРёСЃРєР°: " << annular_queueu_by_list.back();
 	cout << endl;
 }

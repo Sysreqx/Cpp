@@ -1,4 +1,4 @@
-#include "Queue.h"
+п»ї#include "Queue.h"
 
 int & Queue::queueu_by_list_back()
 {
@@ -44,9 +44,9 @@ int Queue::queueu_by_list_size() const
 
 void Queue::print_queueu_by_list()
 {
-	cout << "Список: ";
-	copy(queueu_by_list.begin(), queueu_by_list.end(), ostream_iterator<int>(cout, " ")); // вывод на экран элементов списка
-	cout << "\nПервый элемент списка: " << queueu_by_list.front();
-	cout << "\nПоследний элемент списка: " << queueu_by_list.back();
+	cout << "РЎРїРёСЃРѕРє: ";
+	copy(queueu_by_list.begin(), queueu_by_list.end(), ostream_iterator<int>(cout, " ")); // РІС‹РІРѕРґ РЅР° СЌРєСЂР°РЅ СЌР»РµРјРµРЅС‚РѕРІ СЃРїРёСЃРєР°
+	cout << "\nРџРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚ СЃРїРёСЃРєР°: " << queueu_by_list.front();
+	cout << "\nРџРѕСЃР»РµРґРЅРёР№ СЌР»РµРјРµРЅС‚ СЃРїРёСЃРєР°: " << queueu_by_list.back();
 	cout << endl;
 }

@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "Bird.h"
 #include "Lizard.h"
 class Dragon:public virtual bird, public virtual Lizard

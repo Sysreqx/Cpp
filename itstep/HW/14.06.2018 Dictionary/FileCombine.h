@@ -1,5 +1,5 @@
-#pragma once
-// Добавить перевод к английским словам
+п»ї#pragma once
+// Р”РѕР±Р°РІРёС‚СЊ РїРµСЂРµРІРѕРґ Рє Р°РЅРіР»РёР№СЃРєРёРј СЃР»РѕРІР°Рј
 #include <iostream>
 #include <fstream> //ifstream ofstream
 #include <algorithm> //transform , sort
@@ -15,9 +15,9 @@ using namespace std;
 class FileCombine
 {
 public:
-	// Объединить русский и английский файлы.
+	// РћР±СЉРµРґРёРЅРёС‚СЊ СЂСѓСЃСЃРєРёР№ Рё Р°РЅРіР»РёР№СЃРєРёР№ С„Р°Р№Р»С‹.
 	void FileCombineFunc(string fileName);
-	// Забить бинарное дерево
+	// Р—Р°Р±РёС‚СЊ Р±РёРЅР°СЂРЅРѕРµ РґРµСЂРµРІРѕ
 	void addToMap(map<string, string>& m);
 };
 

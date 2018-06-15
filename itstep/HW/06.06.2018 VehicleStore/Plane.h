@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "AirVehicle.h"
 class Plane :
 	public AirVehicle

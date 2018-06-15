@@ -1,4 +1,4 @@
-#include "Employee.h"
+﻿#include "Employee.h"
 
 Employee::Employee(double _id, std::string _firstName, std::string _lastName, double _salary)
 {

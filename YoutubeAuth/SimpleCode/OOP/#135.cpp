@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <string>
 
 template <class T>
@@ -165,7 +165,7 @@ void List<T>::erase(int pos)
 	}
 }
 //
-//поиск по индексу
+//РїРѕРёСЃРє РїРѕ РёРЅРґРµРєСЃСѓ
 //if (Size == 0)
 //return nullptr;
 //else

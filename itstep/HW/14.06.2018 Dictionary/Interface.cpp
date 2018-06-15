@@ -1,11 +1,11 @@
-#include "Interface.h"
+ï»¿#include "Interface.h"
 
 void Interface::header(map<string, string>& m, int exitz = 9)
 {
 	system("cls");
 	cout << "\n\t\t\t\t------------" << endl <<
-		"\t\t1. Ïåðåâåñòè ñëîâî ñ àíãëèéñêîãî íà ðóññêèé" << endl
-		<< "\t\t2. Ïåðåâåñòè ñëîâî ñ ðóññêîãî íà àíãëèéñêèé" << endl;
+		"\t\t1. ÐŸÐµÑ€ÐµÐ²ÐµÑÑ‚Ð¸ ÑÐ»Ð¾Ð²Ð¾ Ñ Ð°Ð½Ð³Ð»Ð¸Ð¹ÑÐºÐ¾Ð³Ð¾ Ð½Ð° Ñ€ÑƒÑÑÐºÐ¸Ð¹" << endl
+		<< "\t\t2. ÐŸÐµÑ€ÐµÐ²ÐµÑÑ‚Ð¸ ÑÐ»Ð¾Ð²Ð¾ Ñ Ñ€ÑƒÑÑÐºÐ¾Ð³Ð¾ Ð½Ð° Ð°Ð½Ð³Ð»Ð¸Ð¹ÑÐºÐ¸Ð¹" << endl;
 
 	cout << "\t\t\t\t------------" << endl <<
 		"\t\t1. Translate word from English to Russian" << endl
@@ -18,7 +18,7 @@ int Interface::enterWordEnglish(map<string, string>& m)
 {
 	int i;
 	system("cls");
-	cout << "\n\t\tÂâåäèòå ñëîâî íà àíãëèéñêîì" << endl <<
+	cout << "\n\t\tÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÐ»Ð¾Ð²Ð¾ Ð½Ð° Ð°Ð½Ð³Ð»Ð¸Ð¹ÑÐºÐ¾Ð¼" << endl <<
 		"\t\tEnter word in English" << endl;
 	string s;
 	cin >> s;
@@ -36,10 +36,10 @@ int Interface::enterWordEnglish(map<string, string>& m)
 
 	while (t)
 	{
-		cout << "\n\t\tÑëîâî íå íàéäåíî" << endl
-			<< "\t\t1. Ââåñòè ñëîâî åùå ðàç" << endl
-			<< "\t\t2. Âûéòè èç ïðîãðàììû" << endl
-			<< "\t\t3. Âåðíóòüñÿ â ìåíþ" << endl << endl
+		cout << "\n\t\tÐ¡Ð»Ð¾Ð²Ð¾ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾" << endl
+			<< "\t\t1. Ð’Ð²ÐµÑÑ‚Ð¸ ÑÐ»Ð¾Ð²Ð¾ ÐµÑ‰Ðµ Ñ€Ð°Ð·" << endl
+			<< "\t\t2. Ð’Ñ‹Ð¹Ñ‚Ð¸ Ð¸Ð· Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ñ‹" << endl
+			<< "\t\t3. Ð’ÐµÑ€Ð½ÑƒÑ‚ÑŒÑÑ Ð² Ð¼ÐµÐ½ÑŽ" << endl << endl
 			<< "\t\tWord not found" << endl
 			<< "\t\t1. Try another one" << endl
 			<< "\t\t2. Exit" << endl
@@ -73,7 +73,7 @@ int Interface::enterWordRussian(map<string, string>& m)
 {
 	int i;
 	system("cls");
-	cout << "\n\t\tÂâåäèòå ñëîâî íà ðóññêîì" << endl <<
+	cout << "\n\t\tÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÐ»Ð¾Ð²Ð¾ Ð½Ð° Ñ€ÑƒÑÑÐºÐ¾Ð¼" << endl <<
 		"\t\tEnter word in Russian" << endl;
 	string s;
 	cin >> s;
@@ -91,10 +91,10 @@ int Interface::enterWordRussian(map<string, string>& m)
 
 	while (t)
 	{
-		cout << "\n\t\tÑëîâî íå íàéäåíî" << endl
-			<< "\t\t1. Ââåñòè ñëîâî åùå ðàç" << endl
-			<< "\t\t2. Âûéòè èç ïðîãðàììû" << endl
-			<< "\t\t3. Âåðíóòüñÿ â ìåíþ" << endl << endl
+		cout << "\n\t\tÐ¡Ð»Ð¾Ð²Ð¾ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾" << endl
+			<< "\t\t1. Ð’Ð²ÐµÑÑ‚Ð¸ ÑÐ»Ð¾Ð²Ð¾ ÐµÑ‰Ðµ Ñ€Ð°Ð·" << endl
+			<< "\t\t2. Ð’Ñ‹Ð¹Ñ‚Ð¸ Ð¸Ð· Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ñ‹" << endl
+			<< "\t\t3. Ð’ÐµÑ€Ð½ÑƒÑ‚ÑŒÑÑ Ð² Ð¼ÐµÐ½ÑŽ" << endl << endl
 			<< "\t\tWord not found" << endl
 			<< "\t\t1. Try another one" << endl
 			<< "\t\t2. Exit" << endl

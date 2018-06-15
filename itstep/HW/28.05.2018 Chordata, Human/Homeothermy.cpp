@@ -1,4 +1,4 @@
-#include "Homeothermy.h"
+﻿#include "Homeothermy.h"
 
 Homeothermy::Homeothermy(std::string color, std::string name, bool hasSkull, bool hasHomeothermy) : Chordata(color, name, hasSkull)
 {

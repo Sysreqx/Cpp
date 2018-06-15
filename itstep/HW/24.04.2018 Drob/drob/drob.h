@@ -1,4 +1,4 @@
-
+п»ї
 #pragma once
 #include <iostream>
 using namespace std;
@@ -27,7 +27,7 @@ public:
 	operator int() const;
 	operator double() const;
 
-	//перегрузка операции + в виде метода класса
+	//РїРµСЂРµРіСЂСѓР·РєР° РѕРїРµСЂР°С†РёРё + РІ РІРёРґРµ РјРµС‚РѕРґР° РєР»Р°СЃСЃР°
 	//drob operator+(const drob& a) {
 	//	//drob c(*this);
 	//	this->x++;
@@ -38,7 +38,7 @@ public:
 	//	return c;
 	//}
 
-	//возвращает десятичную дробь  0,5
+	//РІРѕР·РІСЂР°С‰Р°РµС‚ РґРµСЃСЏС‚РёС‡РЅСѓСЋ РґСЂРѕР±СЊ  0,5
 	double getDouble() const;
 	//prefix
 	const drob& operator++();
@@ -46,13 +46,13 @@ public:
 	//postfix
 	const drob& operator++(int);
 	const drob& operator--(int);
-	//Приведение к общему знаменателю
+	//РџСЂРёРІРµРґРµРЅРёРµ Рє РѕР±С‰РµРјСѓ Р·РЅР°РјРµРЅР°С‚РµР»СЋ
 	void findCommonDenum(drob &a);
-	//Напечатать дробьж
+	//РќР°РїРµС‡Р°С‚Р°С‚СЊ РґСЂРѕР±СЊР¶
 	void getDec() const;
 };
 
-//перегрузка операции + в виде  глобальной функции
+//РїРµСЂРµРіСЂСѓР·РєР° РѕРїРµСЂР°С†РёРё + РІ РІРёРґРµ  РіР»РѕР±Р°Р»СЊРЅРѕР№ С„СѓРЅРєС†РёРё
 //drob drob
 drob operator+(const drob &a, const drob &b);
 drob operator-(const drob &a, const drob &b);

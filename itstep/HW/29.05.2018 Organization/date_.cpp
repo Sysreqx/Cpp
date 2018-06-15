@@ -1,4 +1,4 @@
-#include "date_.h"
+ï»¿#include "date_.h"
 
 date_::date_(int d, int m, int y)
 {
@@ -76,7 +76,7 @@ istream & operator >> (istream & in, date_ & d)
 	int day, m, y;
 	char tchk;
 
-	cout << "Ââåäèòå äàòó(Íàïğèìåğ: 15.02.1997): ";
+	cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ´Ğ°Ñ‚Ñƒ(ĞĞ°Ğ¿Ñ€Ğ¸Ğ¼ĞµÑ€: 15.02.1997): ";
 	cin >> day >> tchk >> m >> tchk >> y;
 
 	d.setYear(y);

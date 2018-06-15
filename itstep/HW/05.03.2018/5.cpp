@@ -1,11 +1,11 @@
-#include <iostream>
+﻿#include <iostream>
 #include <ctime>
 using namespace std;
 
 int main()
 {
 	srand(time(0));
-	//просто заполнить массив
+	//РїСЂРѕСЃС‚Рѕ Р·Р°РїРѕР»РЅРёС‚СЊ РјР°СЃСЃРёРІ
 	int n, m;
 	cin >> n >> m;
 	int **a = new int*[n];

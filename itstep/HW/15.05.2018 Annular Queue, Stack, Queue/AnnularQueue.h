@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "Queue.h"
 template<class T>
 class AnnularQueue

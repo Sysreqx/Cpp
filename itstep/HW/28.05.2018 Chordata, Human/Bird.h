@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "tetrapoda.h"
 class bird :public virtual tetrapoda
 {

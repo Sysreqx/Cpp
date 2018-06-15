@@ -1,4 +1,4 @@
-#include "Decimals.h"
+﻿#include "Decimals.h"
 
 void Decimals::setNum(int n)
 {

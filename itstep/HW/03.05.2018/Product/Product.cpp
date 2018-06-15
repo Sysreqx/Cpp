@@ -1,4 +1,4 @@
-#include "Product.h"
+ï»¿#include "Product.h"
 
 Product::Product(std::string ProductName, std::string Manufacturer, int y, int m, int d, double Price)
 {
@@ -52,7 +52,7 @@ void Product::setM(int m)
 	this->m += m % 12;
 }
 
-//òèïà 30 äíåé
+//Ñ‚Ð¸Ð¿Ð° 30 Ð´Ð½ÐµÐ¹
 void Product::setD(int d)
 {
 	if (d > 30)

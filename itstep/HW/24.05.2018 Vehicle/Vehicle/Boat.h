@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "WaterVehicle.h"
 class Boat :
 	public WaterVehicle

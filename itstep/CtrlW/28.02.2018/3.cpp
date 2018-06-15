@@ -1,8 +1,8 @@
-#include <iostream>
+﻿#include <iostream>
 #include <string>
 using namespace std;
 
-// // типа рекурсия
+// // С‚РёРїР° СЂРµРєСѓСЂСЃРёСЏ
 // string subs (const string s1, const string s)
 // {
 // 	string ss1 = s.substr(0, s1.length())

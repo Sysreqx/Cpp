@@ -1,5 +1,5 @@
-#pragma once
-// Добавить перевод к английским словам
+п»ї#pragma once
+// Р”РѕР±Р°РІРёС‚СЊ РїРµСЂРµРІРѕРґ Рє Р°РЅРіР»РёР№СЃРєРёРј СЃР»РѕРІР°Рј
 #include <iostream>
 #include <fstream> //ifstream ofstream
 #include <algorithm> //transform , sort

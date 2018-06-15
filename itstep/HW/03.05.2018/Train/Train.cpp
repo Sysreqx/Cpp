@@ -1,4 +1,4 @@
-#include "Train.h"
+﻿#include "Train.h"
 
 Train::Train(std::string Destination, int Hour, int Minutes, int TrainNumber, int NumberOfSeats, int NumberOfCouchette, int NumberOfRSC)
 {

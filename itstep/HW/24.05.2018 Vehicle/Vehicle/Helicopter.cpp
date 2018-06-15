@@ -1,4 +1,4 @@
-#include "Helicopter.h"
+﻿#include "Helicopter.h"
 
 Helicopter::Helicopter(std::string color, std::string model, int max_speed, int number_of_seats, int altitude, double rotorDiameter) : AirVehicle(color, model, max_speed, number_of_seats, altitude)
 {
