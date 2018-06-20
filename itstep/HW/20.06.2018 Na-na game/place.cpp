@@ -1,5 +1,17 @@
 ﻿#include "place.h"
 
+void SetColor(int f, int b)
+{
+	unsigned short ForeColor = f + 16 * b;
+	HANDLE hCon = GetStdHandle(STD_OUTPUT_HANDLE);
+	SetConsoleTextAttribute(hCon, ForeColor);
+}
+
+#define Green SetColor(2, 0)
+#define Yellow SetColor(14, 0)
+#define LightRed SetColor(12, 0)
+#define DarkGray SetColor(8, 0)
+
 place::place() : matrix(6)
 {
 	generate_n(matrix.begin(), 6, []()
@@ -8,13 +20,80 @@ place::place() : matrix(6)
 	});
 }
 
+void place::game(int id, int player)
+{
+	bool flag = false;
+	int p = 1;
+	print();
+	cout << "Player " << p << " turn\n";
+	while (!flag)
+	{
+		if (player == 3)
+			player = 1;
+
+		cin >> id;
+		if (id < 1 || id > 7)
+			cin >> id;
+
+		push(id - 1, player);
+		++player;
+
+		print();
+		p = player - 1;
+		cout << "Player " << p % 2 + 1 << " turn\n";
+		flag = check();
+	}
+
+	if (p == 2)
+		LightRed;
+	if (p == 1)
+		Green;
+
+	cout << endl << "Player " << p << " won" << endl;
+}
+
 void place::print()
 {
-	for_each(matrix.begin(), matrix.end(), [](vector<int>& v)
+	DarkGray;
+	system("cls");
+	std::cout << "\n" <<
+		"    1    2    3    4    5    6    7\n";
+	int cnt = 1;
+	for (auto i : matrix)
 	{
-		copy(v.begin(), v.end(), ostream_iterator<int>(cout, " "));
+		cout << cnt << " ";
+		++cnt;
+		for (auto j : i)
+		{
+			if (j == 1)
+			{
+				Yellow;
+				std::cout << "|";
+				Green;
+				cout << " Q ";
+				Yellow;
+				std::cout << "|";
+				DarkGray;
+			}
+			else if (j == 2)
+			{
+				Yellow;
+				std::cout << "|";
+				LightRed;
+				cout << " O ";
+				Yellow;
+				std::cout << "|";
+				DarkGray;
+			}
+			else
+			{
+				Yellow;
+				std::cout << "|   |";
+				DarkGray;
+			}
+		}
 		cout << endl;
-	});
+	}
 }
 
 void place::push(int id, int player)
@@ -28,9 +107,15 @@ void place::push(int id, int player)
 	if (bufId >= 0 && bufId < matrix.size() && id >= 0 && id < matrix[0].size())
 	{
 		matrix[bufId][id] = player;
+		++c;
 	}
 	else
-		throw exception("Неверный диапазон");
+	{
+		int t = id;
+		while (t == id)
+			cin >> t;
+		push(t - 1, player);
+	}
 
 }
 
@@ -50,6 +135,8 @@ bool place::check()
 		if (it != end(v))
 			p2 = true;
 	});
+	if (p1 == true || p2 == true)
+		return true;
 
 	// Vertical.
 	for (int i = 0; i < 3; i++)
@@ -69,9 +156,11 @@ bool place::check()
 				matrix[i][j] == 2)
 				p2 = true;
 
-			if (p1 == true || p2 == true) break;
+			if (p1 == true || p2 == true)
+				return true;
 		}
-		if (p1 == true || p2 == true) break;
+		if (p1 == true || p2 == true)
+			return true;
 	}
 
 	// BEGIN Main Diagonal.
@@ -132,6 +221,9 @@ bool place::check()
 		p1 = true;
 	if (std::find_end(md6.begin(), md6.end(), buffVP2.begin(), buffVP2.end()) != md6.end())
 		p2 = true;
+
+	if (p1 == true || p2 == true)
+		return true;
 	// END Main Diagonal.
 
 	// BEGIN Anti-Diagonal
@@ -194,8 +286,8 @@ bool place::check()
 	if (std::find_end(ad6.begin(), ad6.end(), buffVP2.begin(), buffVP2.end()) != ad6.end())
 		p2 = true;
 	// END Anti-Diagonal
-
-	cout << p1 << " " << p2 << endl;
+	if (p1 == true || p2 == true)
+		return true;
 
 	return false;
 }
