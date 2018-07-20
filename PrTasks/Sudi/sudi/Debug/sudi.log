@@ -1,0 +1,5 @@
+﻿  editS.cpp
+c:\users\sysrq\source\repos\sudi\sudi\edits.cpp(85): warning C4018: '<': signed/unsigned mismatch
+c:\users\sysrq\source\repos\sudi\sudi\edits.cpp(86): warning C4018: '<': signed/unsigned mismatch
+c:\users\sysrq\source\repos\sudi\sudi\edits.cpp(149): warning C4018: '<': signed/unsigned mismatch
+  sudi.vcxproj -> C:\Users\SysRq\source\repos\sudi\Debug\sudi.exe

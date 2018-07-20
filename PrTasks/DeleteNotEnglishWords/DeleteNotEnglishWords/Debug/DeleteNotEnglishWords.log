@@ -1,0 +1,3 @@
+﻿  Source.cpp
+c:\users\sysrq\source\repos\deletenotenglishwords\deletenotenglishwords\source.cpp(19): warning C4018: '<': signed/unsigned mismatch
+  DeleteNotEnglishWords.vcxproj -> C:\Users\SysRq\source\repos\DeleteNotEnglishWords\Debug\DeleteNotEnglishWords.exe
