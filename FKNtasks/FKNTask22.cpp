@@ -4,75 +4,71 @@ using namespace std;
 
 int main()
 {
-    // Все как в предыдущей задаче, добавил только увеличение M, когда доходит до момента роста елочки.
-    int N = 51;
-    int M = 1;
-
-    cout << "Vvedite kolichestvo cifr v elochke (N): ";
-    cin >> N;
-
-    int cnt = 1;
-    bool trigger = false;
+    // Переменные для данных, 
+    int cnt, newLine, n, m;
+    bool trigger;
 
 
-    //cout << "*" << endl;
-    cout << cnt << endl;
-    cnt++;
+    newLine = 1;
+    cnt = 0;
+    trigger = true;
 
-    while (cnt <= N)
+    // Считать данные с клавиатуры
+    cout << "Vvedite kolichestvo cifr v elochke (N): (primer 99)";
+    cin >> n;
+
+    // Считать данные с клавиатуры
+    cout << "Vvedite shirinu elochki (M): (primer 3)";
+    cin >> m;
+
+    /* n = 99;
+     m = 3;*/
+
+    for (int i = 1; i <= n; i++)
     {
-        if (trigger == false)
+        // Выводим число
+        cout << i << ' ';
+
+        // Увеличиваем счетчик
+        cnt++;
+
+        // Проверяем, если счетчик равен переменной
+        if (cnt == newLine)
         {
-            for (int i = M - 1; i >= 0; i--)
+            // , то переносим на новую строку
+            cout << endl;
+
+            // Если переменная равна ширине елочки
+            if (newLine == m)
             {
-                for (int j = M; j >= i; j--)
-                {
-                    //cout << "*";
-                    cout << cnt << " ";
-
-                    if (cnt == N)
-                    {
-                        return 0;
-                    }
-
-                    cnt++;
-                }
-                cout << endl;
-
-                if (i == 0)
-                {
-                    trigger = true;
-                    /*M++;*/
-                }
+                // Активируем тригер
+                trigger = true;
+                // Увеличиваем ширину елочки
+                m++; // 22
             }
+            else if (newLine == 1) {
+                // Как только переменная достигает единицы, тригер деактивируем
+                trigger = false;
+            }
+
+            // Если переменная больше или равна единицы, тригер деактивирован, увеличиваем переменную
+            if ((newLine >= 1) && (trigger == false))
+            {
+                newLine++;
+            }
+            else if ((newLine <= m) && (trigger == true))
+            {
+                // Если переменная меньше или равна ширине елочки, тригер активирован, то уменьшаем переменную
+                newLine--;
+            }
+
+            // Сбрасываем счетчик
+            cnt = 0;
         }
 
-        if (trigger)
-        {
-            for (int i = M - 1; i >= 0; i--)
-            {
-                for (int j = 0; j <= i; j++)
-                {
-                    //cout << "*";
-                    cout << cnt << " ";
-
-                    if (cnt == N)
-                    {
-                        return 0;
-                    }
-
-                    cnt++;
-                }
-                cout << endl;
-
-                if (i == 0)
-                {
-                    trigger = false;
-                    M++;
-                }
-            }
-        }
     }
+
+    cout << endl;
 
     return 0;
 }

@@ -4,105 +4,71 @@ using namespace std;
 
 int main()
 {
-    //Переменные для данных
-    int N = 25;
-    int M = 3;
+    // Переменные для данных, 
+    int cnt, newLine, n, m;
+    bool trigger;
+
+
+    newLine = 1;
+    cnt = 0;
+    trigger = true;
 
     // Считать данные с клавиатуры
-    cout << "Vvedite kolichestvo cifr v elochke (N): ";
-    cin >> N;
-    
+    cout << "Vvedite kolichestvo cifr v elochke (N): (primer 99)";
+    cin >> n;
+
     // Считать данные с клавиатуры
-    cout << "Vvedite shirinu elochki (M): ";
-    cin >> M;
+    cout << "Vvedite shirinu elochki (M): (primer 3)";
+    cin >> m;
 
-    // Задать счетчик, чтобы выводить цифры.
-    int cnt = 0;
-    // Тригер чтобы знать в какую сторону рисовать елочку.
-    bool trigger = false;
+    /* n = 99;
+     m = 3;*/
 
-    // Если 1 то отрисовать сразу
-    if (M == 1)
+    for (int i = 1; i <= n; i++)
     {
-        while (cnt < N)
+        // Выводим число
+        cout << i << ' ';
+
+        // Увеличиваем счетчик
+        cnt++;
+
+        // Проверяем, если счетчик равен переменной
+        if (cnt == newLine)
         {
-            cout << cnt << endl;
-            cnt++;
-        }
-    }
+            // , то переносим на новую строку
+            cout << endl;
 
-    // Условие добавил после решения, для отловки исключений
-    if (M > 1)
-    {
-        M--;
-    }
-            
-    // Вывести сразу число, потом уже двигаться дальше
-    //cout << "*" << endl;
-    cout << cnt << endl;
-    cnt++;
-
-    // Выводить числа пока, счетчик меньше N
-    while (cnt <= N)
-    {
-        // Двигаемся на увеличение
-        if (trigger == false)
-        {
-            // Елочка начало
-            for (int i = M - 1; i >= 0; i--)
+            // Если переменная равна ширине елочки
+            if (newLine == m)
             {
-                for (int j = M; j >= i; j--)
-                {
-                    //cout << "*";
-                    cout << cnt << " ";
-
-                    // Если достигли N, то завершить программу
-                    if (cnt == N )
-                    {
-                        return 0;
-                    }
-
-                    cnt++;
-                }
-                cout << endl;
-
-                // Как достигли нуля, переключить тригер, чтобы двигаться на возрастание
-                if (i == 0)
-                {
-                    trigger = true;
-                }
+                // Активируем тригер
+                trigger = true;
+                // Увеличиваем ширину елочки
+                //m++; // 22
             }
-            // Елочка конец
-        }
+            else if (newLine == 1) {
+                // Как только переменная достигает единицы, тригер деактивируем
+                trigger = false;
+            }
 
-        // Двигаться на возрастание
-        if (trigger)
-        {
-            // Елочка начало
-            for (int i = M - 1; i >= 0; i--)
+            // Если переменная больше или равна единицы, тригер деактивирован, увеличиваем переменную
+            if ((newLine >= 1) && (trigger == false))
             {
-                for (int j = 0; j <= i; j++)
-                {
-                    //cout << "*";
-                    cout << cnt << " ";
-
-                    if (cnt == N )
-                    {
-                        return 0;
-                    }
-
-                    cnt++;
-                }
-                cout << endl;
-
-                if (i == 0)
-                {
-                    trigger = false;
-                }
+                newLine++;
             }
-            // Елочка конец
+            else if ((newLine <= m) && (trigger == true))
+            {
+                // Если переменная меньше или равна ширине елочки, тригер активирован, то уменьшаем переменную
+                newLine--;
+            }
+
+            // Сбрасываем счетчик
+            cnt = 0;
         }
+
     }
+
+    cout << endl;
 
     return 0;
 }
